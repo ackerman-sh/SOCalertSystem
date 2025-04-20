@@ -1,0 +1,1001 @@
+ip,username,password,timestamp,method,endpoint,status,user_agent,referrer,login_status
+218.92.0.229,guest,admin' --,2025-04-20T20:52:49+0200,PUT,/usr/login,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,success
+203.190.54.1,alex,letmein123,2025-04-20T14:52:49-0400,PUT,/dashboard,404,python-requests/2.25.1,https://unknown.tld/weird,failed
+94.102.49.193,smith,password1,2025-04-20T18:52:49+0000,PUT,/logout,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://unknown.tld/weird,failed
+218.92.0.223,johnsmith,password123,2025-04-20T11:52:49-0700,OPTIONS,/api/data,400,python-requests/2.25.1,https://unknown.tld/weird,success
+185.220.100.252,dev,password,2025-04-20T22:52:49+0400,PATCH,/auth,301,curl/7.68.0,https://evil.com/phishing,success
+37.123.163.58,testuser,admin,2025-04-20T22:52:49+0400,DELETE,/login,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://legit-site.org,success
+198.98.54.17,testuser,admin,2025-04-21T04:52:49+1000,GET,/admin,503,PostmanRuntime/7.29.0,https://bot.com/spam,success
+146.70.80.184,john_doe,<script>alert(1)</script>,2025-04-21T00:22:49+0530,GET,/usr/login,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",-,failed
+218.92.0.216,donald,admin' #,2025-04-20T18:52:49+0000,HEAD,/register,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://google.com,success
+218.92.0.218,david,12345,2025-04-20T22:52:49+0400,DELETE,/api/data,401,curl/7.68.0,https://facebook.com,success
+185.220.101.23,alex,admin,2025-04-20T19:52:49+0100,PATCH,/logout,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,failed
+218.92.0.219,hilary,""" onmouseover=""alert(1)""",2025-04-20T20:52:49+0200,POST,/settings,403,curl/7.68.0,https://evil.com/redirect,failed
+146.70.80.184,adam,1234abcd,2025-04-20T18:52:49+0000,DELETE,/admin,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),-,failed
+218.92.0.223,root,""" onmouseover=""alert(1)""",2025-04-20T14:52:49-0400,POST,/api/user,200,PostmanRuntime/7.29.0,https://evil.com/phishing,failed
+109.248.148.55,test,admin' --,2025-04-20T18:52:49+0000,HEAD,/usr/login,200,curl/7.68.0,https://bot.com/spam,failed
+218.92.0.217,root,root123,2025-04-21T06:52:49+1200,PUT,/profile,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://example.com,success
+45.83.64.1,hacker,' OR 1=1#,2025-04-20T14:52:49-0400,POST,/usr/login,401,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,success
+146.70.80.184,adam,admin' --,2025-04-20T19:52:49+0100,HEAD,/dashboard,201,PostmanRuntime/7.29.0,https://hacked.com/exploit,success
+109.248.148.55,john_doe,root' OR '1'='1,2025-04-20T21:52:49+0300,POST,/profile,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://secured.com,failed
+198.51.100.7,service_account,' OR '1'='1,2025-04-21T06:52:49+1200,PUT,/login,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,success
+218.92.0.236,guest1,admin' #,2025-04-20T21:52:49+0300,PUT,/auth,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/phishing,failed
+185.220.101.23,test,welcome,2025-04-20T11:52:49-0700,GET,/api/user,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://facebook.com,success
+218.92.0.223,guest1,password,2025-04-20T21:52:49+0300,GET,/settings,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,success
+10.0.0.2,test,<script>alert('xss')</script>,2025-04-21T03:52:49+0900,HEAD,/dashboard,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://youtube.com,failed
+45.148.10.67,guest,pass@123,2025-04-20T19:52:49+0100,HEAD,/login,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,failed
+218.92.0.103,adam,password,2025-04-20T11:52:49-0700,DELETE,/admin,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,success
+45.148.10.67,john_doe,toor,2025-04-20T20:52:49+0200,PATCH,/profile,502,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://example.com,success
+134.209.120.69,service,12345,2025-04-20T20:52:49+0200,OPTIONS,/logout,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://example.com,failed
+45.227.253.82,david,welcome,2025-04-20T14:52:49-0400,OPTIONS,/dashboard,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,failed
+94.102.49.193,hilary,' OR 1=1#,2025-04-21T00:22:49+0530,POST,/register,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,success
+218.92.0.227,hacker,password123,2025-04-20T19:52:49+0100,POST,/settings,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://facebook.com,failed
+185.220.101.23,james,admin' #,2025-04-21T00:22:49+0530,PATCH,/profile,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://example.com,failed
+10.0.0.2,alex,1234abcd,2025-04-20T14:52:49-0400,POST,/profile,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://secured.com,success
+185.220.100.252,testuser,admin' --,2025-04-20T14:52:49-0400,OPTIONS,/login,404,curl/7.68.0,https://legit-site.org,success
+218.92.0.227,guest,'; DROP TABLE users; --,2025-04-21T03:52:49+0900,DELETE,/profile,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://hacked.com/exploit,success
+218.92.0.231,charlie,1234abcd,2025-04-20T18:52:49+0000,PUT,/register,201,PostmanRuntime/7.29.0,https://bot.com/spam,success
+193.218.118.110,bob,admin,2025-04-21T04:52:49+1000,OPTIONS,/profile,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,success
+193.218.118.110,angela,admin' #,2025-04-21T03:52:49+0900,PUT,/register,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,success
+141.98.10.91,james,admin,2025-04-21T03:52:49+0900,HEAD,/api/data,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,success
+89.234.157.254,johnsmith,'; DROP TABLE users; --,2025-04-20T19:52:49+0100,HEAD,/settings,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/phishing,success
+218.92.0.218,hilary,'; DROP TABLE users; --,2025-04-20T20:52:49+0200,PUT,/auth,502,PostmanRuntime/7.29.0,https://legit-site.org,success
+103.152.220.10,donald,x' OR 1=1 --,2025-04-20T19:52:49+0100,GET,/login,200,python-requests/2.25.1,https://youtube.com,success
+10.0.0.2,eve,toor,2025-04-20T19:52:49+0100,DELETE,/register,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://legit-site.org,success
+185.246.208.200,admin,qwerty,2025-04-20T20:52:49+0200,PUT,/register,500,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,failed
+172.16.0.3,service_account,password123,2025-04-21T04:52:49+1000,PUT,/logout,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://youtube.com,failed
+218.92.0.236,user,password,2025-04-21T04:52:49+1000,GET,/admin,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://attack.com/malicious,failed
+45.66.11.10,donald,<script>alert(1)</script>,2025-04-21T00:22:49+0530,OPTIONS,/usr/login,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,success
+218.92.0.216,adam,""" onmouseover=""alert(1)""",2025-04-21T03:52:49+0900,OPTIONS,/api/data,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://someother.com,failed
+45.227.253.82,guest,letmein,2025-04-20T22:52:49+0400,HEAD,/register,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/redirect,failed
+218.92.0.217,janedoe,password123,2025-04-21T04:52:49+1000,POST,/api/user,404,PostmanRuntime/7.29.0,-,success
+45.227.253.82,hilary,x' OR 1=1 --,2025-04-20T19:52:49+0100,DELETE,/api/data,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://unknown.tld/weird,success
+103.86.49.149,janedoe,password123,2025-04-20T20:52:49+0200,GET,/api/data,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,failed
+185.220.101.23,service_account,'; DROP TABLE users; --,2025-04-20T21:52:49+0300,POST,/register,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://bot.com/spam,success
+218.92.0.231,user,<script>alert(1)</script>,2025-04-20T14:52:49-0400,HEAD,/settings,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://secured.com,failed
+185.220.101.23,eve,<script>alert(1)</script>,2025-04-21T03:52:49+0900,DELETE,/api/data,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,failed
+45.227.253.82,guest1,<script>alert('xss')</script>,2025-04-20T14:52:49-0400,HEAD,/usr/login,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,success
+45.148.10.67,user,password1,2025-04-20T19:52:49+0100,PATCH,/profile,400,curl/7.68.0,https://evil.com/phishing,failed
+185.220.100.252,alice,""" onmouseover=""alert(1)""",2025-04-21T00:22:49+0530,PUT,/auth,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://example.com,success
+218.92.0.219,service_account,admin' #,2025-04-20T19:52:49+0100,POST,/auth,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/phishing,failed
+37.123.163.58,hacker,iloveyou,2025-04-21T06:52:49+1200,HEAD,/logout,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,success
+141.98.10.91,james,123456,2025-04-21T00:22:49+0530,POST,/profile,403,PostmanRuntime/7.29.0,https://google.com,success
+45.66.11.10,isabella,12345,2025-04-20T18:52:49+0000,POST,/admin,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://bot.com/spam,failed
+103.152.220.10,user,password123,2025-04-20T20:52:49+0200,HEAD,/login,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/phishing,success
+185.220.101.23,test,1234abcd,2025-04-21T00:22:49+0530,DELETE,/api/user,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://google.com,failed
+134.209.120.69,johnsmith,'; DROP TABLE users; --,2025-04-21T03:52:49+0900,OPTIONS,/profile,500,PostmanRuntime/7.29.0,https://youtube.com,failed
+109.248.148.55,guest,1234abcd,2025-04-20T21:52:49+0300,DELETE,/auth,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://unknown.tld/weird,success
+218.92.0.227,bob,admin' #,2025-04-20T19:52:49+0100,OPTIONS,/api/user,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,success
+89.234.157.254,root,""" onmouseover=""alert(1)""",2025-04-20T14:52:49-0400,DELETE,/login,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://attack.com/malicious,failed
+218.92.0.219,dev,letmein,2025-04-21T06:52:49+1200,OPTIONS,/profile,503,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,failed
+45.148.10.67,eve,root123,2025-04-20T14:52:49-0400,PATCH,/login,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://example.com,success
+203.190.54.1,service,""" onmouseover=""alert(1)""",2025-04-21T00:22:49+0530,PATCH,/profile,503,python-requests/2.25.1,https://bot.com/spam,success
+218.92.0.227,root,letmein,2025-04-20T20:52:49+0200,DELETE,/profile,200,curl/7.68.0,https://attack.com/malicious,failed
+218.92.0.231,janedoe,root123,2025-04-20T14:52:49-0400,OPTIONS,/auth,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://legit-site.org,failed
+45.134.20.55,donald,pass@123,2025-04-21T04:52:49+1000,HEAD,/register,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/phishing,failed
+185.107.56.231,john_doe,qwerty,2025-04-20T19:52:49+0100,OPTIONS,/admin,201,curl/7.68.0,https://example.com,success
+10.0.0.2,admin,<script>alert('xss')</script>,2025-04-20T21:52:49+0300,GET,/profile,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://unknown.tld/weird,failed
+45.134.20.55,manager,123qwe,2025-04-21T03:52:49+0900,PATCH,/login,200,curl/7.68.0,https://youtube.com,success
+141.98.10.91,service,""" onmouseover=""alert(1)""",2025-04-21T03:52:49+0900,POST,/dashboard,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,failed
+103.152.220.10,guest1,admin' --,2025-04-20T14:52:49-0400,GET,/logout,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://youtube.com,success
+218.92.0.220,dev,letmein,2025-04-20T22:52:49+0400,GET,/api/user,401,curl/7.68.0,https://bot.com/spam,success
+218.92.0.103,user,x' OR 1=1 --,2025-04-20T19:52:49+0100,HEAD,/login,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://unknown.tld/weird,failed
+89.234.157.254,manager,password1,2025-04-20T20:52:49+0200,OPTIONS,/settings,400,PostmanRuntime/7.29.0,https://secured.com,success
+141.98.10.91,adam,""" onmouseover=""alert(1)""",2025-04-20T20:52:49+0200,OPTIONS,/profile,404,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://facebook.com,success
+109.248.148.55,adam,root,2025-04-20T20:52:49+0200,OPTIONS,/api/data,404,python-requests/2.25.1,https://example.com,failed
+10.0.0.2,hacker,iloveyou,2025-04-20T14:52:49-0400,HEAD,/auth,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://youtube.com,success
+218.92.0.111,dbadmin,123456,2025-04-20T22:52:49+0400,GET,/api/data,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://example.com,success
+218.92.0.216,johnsmith,iloveyou,2025-04-20T19:52:49+0100,PATCH,/auth,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,success
+141.98.10.91,hilary,root,2025-04-20T11:52:49-0700,PATCH,/dashboard,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/phishing,success
+193.32.126.210,johnsmith,<script>alert('xss')</script>,2025-04-20T14:52:49-0400,HEAD,/logout,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://legit-site.org,failed
+134.209.120.69,service_account,iloveyou,2025-04-20T22:52:49+0400,GET,/register,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://facebook.com,success
+172.16.0.3,admin,root' OR '1'='1,2025-04-20T21:52:49+0300,POST,/logout,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,success
+218.92.0.219,angela,password123,2025-04-21T00:22:49+0530,GET,/usr/login,503,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://google.com,success
+94.102.49.193,james,' OR 1=1#,2025-04-21T06:52:49+1200,PATCH,/login,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,success
+218.92.0.226,hilary,123456,2025-04-20T20:52:49+0200,HEAD,/admin,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://bot.com/spam,success
+218.92.0.221,hilary,1234abcd,2025-04-21T00:22:49+0530,HEAD,/login,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,failed
+203.0.113.5,test,123qwe,2025-04-21T03:52:49+0900,DELETE,/api/user,401,python-requests/2.25.1,https://evil.com/phishing,failed
+218.92.0.226,guest1,123456,2025-04-20T20:52:49+0200,PATCH,/profile,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/phishing,failed
+218.92.0.221,angela,""" onmouseover=""alert(1)""",2025-04-21T04:52:49+1000,POST,/admin,201,PostmanRuntime/7.29.0,https://someother.com,success
+185.129.62.62,alice,123456,2025-04-20T20:52:49+0200,HEAD,/profile,502,curl/7.68.0,https://youtube.com,success
+185.220.101.23,alex,12345,2025-04-20T22:52:49+0400,OPTIONS,/usr/login,201,curl/7.68.0,https://evil.com/phishing,failed
+218.92.0.220,service_account,letmein123,2025-04-20T22:52:49+0400,PUT,/settings,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://facebook.com,failed
+218.92.0.218,smith,root123,2025-04-21T06:52:49+1200,HEAD,/profile,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://hacked.com/exploit,failed
+103.86.49.149,hilary,password1,2025-04-21T00:22:49+0530,DELETE,/login,400,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://legit-site.org,success
+218.92.0.103,guest,x' OR 1=1 --,2025-04-21T04:52:49+1000,PUT,/auth,301,PostmanRuntime/7.29.0,https://evil.com/phishing,failed
+185.246.208.200,johnsmith,admin' #,2025-04-20T14:52:49-0400,GET,/dashboard,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://youtube.com,success
+218.92.0.219,eve,root' OR '1'='1,2025-04-20T14:52:49-0400,OPTIONS,/profile,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,success
+103.152.220.10,bob,iloveyou,2025-04-20T11:52:49-0700,PUT,/api/data,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://secured.com,success
+185.142.236.35,admin,admin' --,2025-04-21T06:52:49+1200,OPTIONS,/api/user,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://hacked.com/exploit,failed
+45.227.253.82,webmaster,letmein123,2025-04-21T00:22:49+0530,PATCH,/usr/login,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://facebook.com,failed
+94.102.49.193,hilary,root' OR '1'='1,2025-04-20T20:52:49+0200,HEAD,/settings,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://bot.com/spam,failed
+192.168.1.1,service_account,admin' --,2025-04-20T11:52:49-0700,GET,/dashboard,301,python-requests/2.25.1,https://youtube.com,failed
+37.123.163.58,manager,'; DROP TABLE users; --,2025-04-20T18:52:49+0000,GET,/api/data,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://bot.com/spam,failed
+218.92.0.225,root,123qwe,2025-04-20T11:52:49-0700,OPTIONS,/login,201,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,success
+185.38.175.132,dev,password123,2025-04-20T20:52:49+0200,PATCH,/logout,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",-,success
+218.92.0.236,charlie,iloveyou,2025-04-21T00:22:49+0530,PUT,/logout,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,success
+185.129.62.62,smith,<script>alert(1)</script>,2025-04-21T04:52:49+1000,DELETE,/dashboard,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://example.com,success
+37.123.163.58,webmaster,12345,2025-04-21T00:22:49+0530,POST,/profile,201,PostmanRuntime/7.29.0,https://someother.com,failed
+185.220.100.252,manager,'; DROP TABLE users; --,2025-04-20T18:52:49+0000,DELETE,/logout,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,failed
+37.123.163.58,alice,qwerty,2025-04-20T20:52:49+0200,DELETE,/usr/login,200,curl/7.68.0,https://facebook.com,failed
+103.75.201.2,webmaster,root,2025-04-20T20:52:49+0200,HEAD,/auth,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://legit-site.org,failed
+103.152.220.10,eve,' OR '1'='1,2025-04-21T06:52:49+1200,DELETE,/login,301,PostmanRuntime/7.29.0,https://bot.com/spam,success
+218.92.0.223,dbadmin,'; DROP TABLE users; --,2025-04-20T21:52:49+0300,PATCH,/register,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,success
+185.246.208.200,manager,123456,2025-04-20T20:52:49+0200,PUT,/api/data,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://unknown.tld/weird,failed
+218.92.0.227,smith,admin' --,2025-04-20T14:52:49-0400,DELETE,/dashboard,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/phishing,failed
+218.92.0.231,john_doe,password,2025-04-20T21:52:49+0300,OPTIONS,/profile,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://example.com,success
+218.92.0.227,admin,' OR 1=1#,2025-04-20T19:52:49+0100,OPTIONS,/admin,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://example.com,success
+198.51.100.7,root,123456,2025-04-20T19:52:49+0100,PATCH,/settings,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://legit-site.org,success
+37.123.163.58,hilary,<script>alert(1)</script>,2025-04-20T20:52:49+0200,HEAD,/settings,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://example.com,success
+218.92.0.219,test,admin,2025-04-20T21:52:49+0300,OPTIONS,/api/user,500,python-requests/2.25.1,https://google.com,success
+45.227.253.82,dev,iloveyou,2025-04-20T18:52:49+0000,PATCH,/settings,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,failed
+218.92.0.236,james,x' OR 1=1 --,2025-04-21T03:52:49+0900,OPTIONS,/register,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://youtube.com,failed
+185.38.175.132,donald,123qwe,2025-04-21T04:52:49+1000,PATCH,/dashboard,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://legit-site.org,success
+185.220.101.23,adam,admin,2025-04-20T21:52:49+0300,PUT,/logout,503,curl/7.68.0,https://unknown.tld/weird,success
+218.92.0.111,root,123456,2025-04-20T11:52:49-0700,PATCH,/logout,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,failed
+203.0.113.5,donald,""" onmouseover=""alert(1)""",2025-04-20T21:52:49+0300,POST,/usr/login,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/phishing,failed
+193.32.126.210,donald,password123,2025-04-20T22:52:49+0400,HEAD,/admin,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://bot.com/spam,success
+45.148.10.67,service,password1,2025-04-20T20:52:49+0200,HEAD,/dashboard,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://legit-site.org,success
+185.129.62.62,angela,123456,2025-04-21T03:52:49+0900,DELETE,/api/data,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,success
+218.92.0.219,root,root123,2025-04-20T20:52:49+0200,PUT,/settings,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://someother.com,success
+218.92.0.111,webmaster,pass@123,2025-04-20T18:52:49+0000,GET,/register,404,PostmanRuntime/7.29.0,https://secured.com,failed
+10.0.0.2,guest,x' OR 1=1 --,2025-04-21T06:52:49+1200,OPTIONS,/login,403,python-requests/2.25.1,https://hacked.com/exploit,failed
+193.218.118.110,angela,password1,2025-04-20T19:52:49+0100,DELETE,/api/data,404,curl/7.68.0,https://example.com,failed
+103.75.201.2,angela,admin' --,2025-04-21T04:52:49+1000,DELETE,/profile,200,python-requests/2.25.1,https://hacked.com/exploit,success
+218.92.0.217,angela,letmein,2025-04-20T21:52:49+0300,POST,/api/user,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://unknown.tld/weird,failed
+185.100.87.202,dbadmin,root123,2025-04-21T06:52:49+1200,HEAD,/admin,201,python-requests/2.25.1,https://google.com,success
+103.55.38.6,johnsmith,qwerty,2025-04-21T04:52:49+1000,GET,/api/data,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,failed
+141.98.10.91,hilary,12345,2025-04-20T19:52:49+0100,HEAD,/login,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,failed
+141.98.10.91,guest1,root' OR '1'='1,2025-04-20T11:52:49-0700,PUT,/register,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://legit-site.org,failed
+37.123.163.58,alex,admin,2025-04-20T11:52:49-0700,OPTIONS,/dashboard,502,curl/7.68.0,https://attack.com/malicious,success
+185.107.56.231,dev,root,2025-04-21T00:22:49+0530,OPTIONS,/register,404,python-requests/2.25.1,https://unknown.tld/weird,success
+94.102.49.193,janedoe,123456,2025-04-21T00:22:49+0530,PATCH,/api/data,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://someother.com,success
+218.92.0.227,alice,admin' #,2025-04-20T21:52:49+0300,POST,/admin,500,curl/7.68.0,https://legit-site.org,failed
+45.227.253.82,johnsmith,password1,2025-04-20T20:52:49+0200,OPTIONS,/settings,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://legit-site.org,failed
+45.148.10.67,isabella,12345,2025-04-21T03:52:49+0900,PUT,/settings,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,failed
+194.147.142.0,admin,qwerty,2025-04-21T00:22:49+0530,OPTIONS,/dashboard,301,python-requests/2.25.1,https://unknown.tld/weird,success
+218.92.0.217,dev,password123,2025-04-20T20:52:49+0200,HEAD,/auth,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/redirect,failed
+103.152.220.10,adam,<script>alert('xss')</script>,2025-04-20T19:52:49+0100,PUT,/login,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,failed
+103.15.28.5,guest1,toor,2025-04-21T03:52:49+0900,OPTIONS,/api/user,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://google.com,success
+45.134.20.55,service_account,'; DROP TABLE users; --,2025-04-20T11:52:49-0700,PATCH,/profile,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/phishing,success
+89.234.157.254,service,root,2025-04-21T00:22:49+0530,OPTIONS,/login,503,PostmanRuntime/7.29.0,https://google.com,failed
+185.220.101.23,service_account,password1,2025-04-20T20:52:49+0200,GET,/usr/login,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://attack.com/malicious,success
+185.220.101.23,alice,password,2025-04-21T06:52:49+1200,PATCH,/register,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/phishing,success
+218.92.0.218,dbadmin,admin' --,2025-04-20T22:52:49+0400,DELETE,/login,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://hacked.com/exploit,success
+185.100.87.202,service_account,admin' --,2025-04-20T11:52:49-0700,PUT,/logout,401,PostmanRuntime/7.29.0,-,success
+185.129.62.62,webmaster,123456,2025-04-20T19:52:49+0100,OPTIONS,/auth,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,failed
+45.83.64.1,webmaster,password123,2025-04-20T20:52:49+0200,GET,/api/user,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,success
+172.16.0.3,donald,admin' --,2025-04-20T19:52:49+0100,PATCH,/dashboard,200,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/phishing,success
+218.92.0.103,dbadmin,password,2025-04-20T14:52:49-0400,GET,/logout,500,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,failed
+218.92.0.217,webmaster,pass@123,2025-04-20T19:52:49+0100,POST,/dashboard,401,python-requests/2.25.1,-,failed
+185.220.101.23,james,qwerty,2025-04-21T00:22:49+0530,GET,/api/data,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://example.com,failed
+218.92.0.221,janedoe,admin,2025-04-21T04:52:49+1000,DELETE,/dashboard,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/redirect,failed
+185.220.101.23,admin,letmein123,2025-04-20T22:52:49+0400,GET,/dashboard,500,curl/7.68.0,https://bot.com/spam,success
+185.220.101.23,james,password,2025-04-21T03:52:49+0900,GET,/usr/login,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://example.com,success
+218.92.0.223,johnsmith,<script>alert('xss')</script>,2025-04-20T19:52:49+0100,DELETE,/dashboard,201,curl/7.68.0,https://legit-site.org,success
+185.107.56.231,testuser,'; DROP TABLE users; --,2025-04-21T06:52:49+1200,POST,/profile,502,PostmanRuntime/7.29.0,https://google.com,success
+103.75.201.2,james,123456,2025-04-21T04:52:49+1000,POST,/admin,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,failed
+103.75.201.2,test,password,2025-04-20T22:52:49+0400,GET,/register,503,curl/7.68.0,https://example.com,failed
+185.220.101.23,service_account,toor,2025-04-20T18:52:49+0000,HEAD,/usr/login,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://unknown.tld/weird,failed
+146.70.80.184,johnsmith,qwerty,2025-04-20T19:52:49+0100,POST,/logout,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/phishing,success
+103.152.220.10,service,' OR '1'='1,2025-04-20T20:52:49+0200,PATCH,/logout,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,success
+45.83.64.1,isabella,""" onmouseover=""alert(1)""",2025-04-20T11:52:49-0700,PUT,/admin,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://hacked.com/exploit,success
+203.190.54.1,hilary,root,2025-04-20T20:52:49+0200,DELETE,/api/user,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://secured.com,failed
+203.190.54.1,janedoe,admin' --,2025-04-21T04:52:49+1000,POST,/login,503,curl/7.68.0,https://legit-site.org,success
+203.0.113.5,janedoe,1234abcd,2025-04-20T18:52:49+0000,PUT,/api/data,500,PostmanRuntime/7.29.0,https://evil.com/redirect,success
+209.141.38.71,isabella,12345,2025-04-20T21:52:49+0300,POST,/usr/login,400,python-requests/2.25.1,https://youtube.com,success
+185.100.87.202,webmaster,root' OR '1'='1,2025-04-20T19:52:49+0100,GET,/login,400,curl/7.68.0,https://bot.com/spam,success
+37.123.163.58,adam,123qwe,2025-04-20T20:52:49+0200,DELETE,/api/data,503,curl/7.68.0,https://facebook.com,success
+218.92.0.218,root,password123,2025-04-20T20:52:49+0200,GET,/register,502,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,success
+103.55.38.6,service_account,1234abcd,2025-04-20T19:52:49+0100,GET,/profile,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://youtube.com,success
+218.92.0.231,alex,'; DROP TABLE users; --,2025-04-20T20:52:49+0200,DELETE,/api/user,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://unknown.tld/weird,success
+37.123.163.58,root,123qwe,2025-04-20T18:52:49+0000,PATCH,/logout,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,failed
+103.75.201.2,hacker,root' OR '1'='1,2025-04-20T19:52:49+0100,GET,/auth,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,success
+193.32.126.210,admin,password,2025-04-20T18:52:49+0000,PATCH,/admin,404,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://attack.com/malicious,failed
+146.70.80.184,alex,<script>alert('xss')</script>,2025-04-21T06:52:49+1200,GET,/api/user,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,success
+209.141.38.71,david,'; DROP TABLE users; --,2025-04-21T03:52:49+0900,DELETE,/profile,502,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://unknown.tld/weird,success
+218.92.0.228,dev,admin' --,2025-04-20T14:52:49-0400,POST,/api/user,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://facebook.com,success
+185.129.62.62,isabella,password123,2025-04-20T20:52:49+0200,PATCH,/register,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://hacked.com/exploit,success
+172.16.0.3,webmaster,passw0rd,2025-04-20T20:52:49+0200,OPTIONS,/api/data,301,curl/7.68.0,https://unknown.tld/weird,success
+218.92.0.229,angela,root,2025-04-21T00:22:49+0530,DELETE,/auth,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,failed
+103.152.220.10,webmaster,admin' --,2025-04-21T03:52:49+0900,HEAD,/admin,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",-,failed
+203.190.54.1,root,password,2025-04-20T22:52:49+0400,DELETE,/dashboard,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,success
+172.16.0.3,testuser,welcome,2025-04-20T11:52:49-0700,PUT,/register,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,failed
+146.70.80.184,testuser,passw0rd,2025-04-21T03:52:49+0900,OPTIONS,/api/user,403,curl/7.68.0,https://facebook.com,success
+218.92.0.227,donald,root' OR '1'='1,2025-04-21T00:22:49+0530,PATCH,/usr/login,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://attack.com/malicious,failed
+111.90.147.183,john_doe,passw0rd,2025-04-21T04:52:49+1000,POST,/auth,200,curl/7.68.0,https://bot.com/spam,failed
+218.92.0.221,dev,root' OR '1'='1,2025-04-21T04:52:49+1000,POST,/login,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,failed
+218.92.0.217,hilary,' OR '1'='1,2025-04-20T20:52:49+0200,POST,/usr/login,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://facebook.com,success
+172.16.0.3,service_account,pass@123,2025-04-20T21:52:49+0300,DELETE,/auth,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://unknown.tld/weird,success
+218.92.0.111,smith,toor,2025-04-21T03:52:49+0900,PUT,/usr/login,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://facebook.com,success
+218.92.0.216,service_account,12345,2025-04-20T18:52:49+0000,PATCH,/login,502,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://hacked.com/exploit,success
+198.51.100.7,alice,admin' --,2025-04-20T21:52:49+0300,DELETE,/logout,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),-,failed
+45.148.10.67,eve,root' OR '1'='1,2025-04-20T21:52:49+0300,PUT,/auth,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://bot.com/spam,failed
+218.92.0.233,service,letmein,2025-04-21T06:52:49+1200,PATCH,/api/data,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,success
+103.75.201.2,bob,admin,2025-04-20T18:52:49+0000,GET,/settings,503,curl/7.68.0,https://secured.com,success
+103.15.28.5,charlie,admin' #,2025-04-20T20:52:49+0200,OPTIONS,/auth,301,python-requests/2.25.1,https://secured.com,failed
+198.51.100.7,webmaster,welcome,2025-04-20T20:52:49+0200,POST,/auth,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://someother.com,failed
+209.141.38.71,angela,root,2025-04-20T21:52:49+0300,OPTIONS,/settings,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://bot.com/spam,success
+172.16.0.3,admin,admin' --,2025-04-20T20:52:49+0200,OPTIONS,/auth,404,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,failed
+218.92.0.217,charlie,passw0rd,2025-04-21T06:52:49+1200,HEAD,/api/user,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://secured.com,success
+185.142.236.35,james,'; DROP TABLE users; --,2025-04-20T11:52:49-0700,GET,/register,400,python-requests/2.25.1,https://legit-site.org,success
+45.148.10.67,adam,password1,2025-04-21T00:22:49+0530,PUT,/profile,403,python-requests/2.25.1,https://legit-site.org,success
+103.152.220.10,adam,root' OR '1'='1,2025-04-20T20:52:49+0200,GET,/settings,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://facebook.com,failed
+45.148.10.67,guest1,' OR 1=1#,2025-04-20T11:52:49-0700,HEAD,/profile,503,PostmanRuntime/7.29.0,-,success
+218.92.0.230,service,passw0rd,2025-04-21T00:22:49+0530,GET,/auth,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://secured.com,failed
+218.92.0.230,guest,<script>alert(1)</script>,2025-04-20T11:52:49-0700,PUT,/login,502,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://secured.com,failed
+45.227.253.82,user,123456,2025-04-20T22:52:49+0400,GET,/api/data,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,failed
+203.0.113.5,alice,letmein,2025-04-21T04:52:49+1000,PUT,/logout,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,failed
+218.92.0.221,user,root' OR '1'='1,2025-04-20T22:52:49+0400,PATCH,/settings,502,curl/7.68.0,https://bot.com/spam,failed
+45.66.11.10,angela,pass@123,2025-04-20T11:52:49-0700,POST,/login,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",-,failed
+192.168.1.1,janedoe,admin' --,2025-04-21T00:22:49+0530,GET,/usr/login,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",-,failed
+218.92.0.111,alex,pass@123,2025-04-20T18:52:49+0000,OPTIONS,/api/data,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,failed
+45.83.64.1,admin,'; DROP TABLE users; --,2025-04-21T04:52:49+1000,HEAD,/admin,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://legit-site.org,success
+193.218.118.110,service_account,root123,2025-04-20T18:52:49+0000,DELETE,/logout,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,failed
+193.218.118.110,manager,root,2025-04-20T14:52:49-0400,PUT,/logout,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://legit-site.org,success
+89.234.157.254,alice,letmein123,2025-04-20T20:52:49+0200,PATCH,/settings,500,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://bot.com/spam,failed
+218.92.0.227,hacker,toor,2025-04-21T04:52:49+1000,HEAD,/admin,401,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://legit-site.org,success
+103.75.201.2,bob,root,2025-04-21T06:52:49+1200,OPTIONS,/api/data,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/redirect,failed
+185.220.100.252,hilary,admin' --,2025-04-20T20:52:49+0200,HEAD,/admin,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,failed
+198.51.100.7,isabella,1234abcd,2025-04-20T18:52:49+0000,OPTIONS,/api/user,201,curl/7.68.0,-,success
+218.92.0.231,dev,' OR '1'='1,2025-04-21T04:52:49+1000,DELETE,/usr/login,500,PostmanRuntime/7.29.0,https://evil.com/phishing,success
+146.70.80.184,charlie,password1,2025-04-21T03:52:49+0900,PATCH,/admin,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://google.com,failed
+218.92.0.223,janedoe,admin,2025-04-20T21:52:49+0300,DELETE,/profile,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,failed
+218.92.0.216,charlie,x' OR 1=1 --,2025-04-21T03:52:49+0900,PUT,/login,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://facebook.com,failed
+218.92.0.218,hilary,' OR 1=1#,2025-04-20T21:52:49+0300,OPTIONS,/register,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://someother.com,success
+103.55.38.6,angela,root,2025-04-20T11:52:49-0700,HEAD,/usr/login,502,curl/7.68.0,https://bot.com/spam,success
+218.92.0.221,alex,1234abcd,2025-04-21T03:52:49+0900,PUT,/dashboard,500,python-requests/2.25.1,-,failed
+146.70.80.184,root,root' OR '1'='1,2025-04-20T19:52:49+0100,PATCH,/dashboard,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://secured.com,success
+218.92.0.220,david,letmein123,2025-04-21T06:52:49+1200,PATCH,/api/user,500,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://hacked.com/exploit,success
+185.246.208.200,adam,admin' #,2025-04-20T21:52:49+0300,DELETE,/admin,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://unknown.tld/weird,failed
+218.92.0.228,dbadmin,admin' --,2025-04-21T04:52:49+1000,OPTIONS,/usr/login,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://attack.com/malicious,success
+45.66.11.10,dbadmin,""" onmouseover=""alert(1)""",2025-04-21T04:52:49+1000,OPTIONS,/settings,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,success
+185.129.62.62,smith,passw0rd,2025-04-20T20:52:49+0200,PUT,/auth,502,PostmanRuntime/7.29.0,https://evil.com/redirect,success
+94.102.49.193,adam,passw0rd,2025-04-20T20:52:49+0200,DELETE,/logout,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,success
+134.209.120.69,david,admin,2025-04-21T06:52:49+1200,PATCH,/api/data,502,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://attack.com/malicious,success
+103.152.220.10,isabella,'; DROP TABLE users; --,2025-04-21T00:22:49+0530,PUT,/dashboard,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,success
+185.246.208.200,john_doe,root' OR '1'='1,2025-04-20T20:52:49+0200,PATCH,/logout,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/phishing,success
+103.207.38.34,dev,' OR 1=1#,2025-04-21T06:52:49+1200,HEAD,/auth,403,curl/7.68.0,https://google.com,failed
+45.83.64.1,test,123qwe,2025-04-20T14:52:49-0400,DELETE,/register,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://bot.com/spam,failed
+185.220.100.252,dbadmin,admin' #,2025-04-21T04:52:49+1000,HEAD,/usr/login,401,PostmanRuntime/7.29.0,https://unknown.tld/weird,failed
+134.209.120.69,janedoe,admin,2025-04-21T04:52:49+1000,POST,/api/data,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/phishing,failed
+194.147.142.0,john_doe,123qwe,2025-04-20T21:52:49+0300,OPTIONS,/settings,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,failed
+45.134.20.55,james,123qwe,2025-04-20T20:52:49+0200,GET,/register,403,PostmanRuntime/7.29.0,https://youtube.com,failed
+218.92.0.216,root,iloveyou,2025-04-21T00:22:49+0530,PATCH,/logout,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://bot.com/spam,failed
+218.92.0.111,user,passw0rd,2025-04-21T00:22:49+0530,PUT,/dashboard,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://unknown.tld/weird,failed
+198.98.54.17,adam,passw0rd,2025-04-20T20:52:49+0200,OPTIONS,/dashboard,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://legit-site.org,failed
+111.90.147.183,hacker,1234abcd,2025-04-20T20:52:49+0200,DELETE,/profile,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://hacked.com/exploit,failed
+218.92.0.230,service_account,password,2025-04-21T00:22:49+0530,DELETE,/register,404,python-requests/2.25.1,https://legit-site.org,failed
+218.92.0.236,johnsmith,admin' --,2025-04-21T00:22:49+0530,DELETE,/register,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://legit-site.org,success
+203.0.113.5,webmaster,' OR 1=1#,2025-04-20T22:52:49+0400,GET,/register,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://bot.com/spam,failed
+185.246.208.200,angela,admin' --,2025-04-20T20:52:49+0200,PATCH,/profile,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://facebook.com,failed
+37.123.163.58,test,pass@123,2025-04-21T00:22:49+0530,PUT,/settings,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://unknown.tld/weird,success
+218.92.0.216,service_account,admin' #,2025-04-20T20:52:49+0200,GET,/profile,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://unknown.tld/weird,success
+218.92.0.230,isabella,admin' --,2025-04-20T20:52:49+0200,OPTIONS,/auth,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",-,failed
+103.86.49.149,charlie,root' OR '1'='1,2025-04-20T20:52:49+0200,PATCH,/usr/login,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://secured.com,failed
+193.32.126.210,johnsmith,admin' --,2025-04-21T00:22:49+0530,POST,/dashboard,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,success
+185.220.100.252,guest,'; DROP TABLE users; --,2025-04-20T18:52:49+0000,HEAD,/register,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/phishing,success
+45.66.11.10,webmaster,<script>alert('xss')</script>,2025-04-20T20:52:49+0200,DELETE,/register,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,success
+218.92.0.217,service_account,admin' #,2025-04-20T21:52:49+0300,DELETE,/admin,502,python-requests/2.25.1,https://example.com,success
+103.55.38.6,adam,""" onmouseover=""alert(1)""",2025-04-20T20:52:49+0200,PUT,/register,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://secured.com,success
+103.15.28.5,angela,1234abcd,2025-04-21T00:22:49+0530,GET,/api/user,500,curl/7.68.0,https://unknown.tld/weird,success
+172.16.0.3,alex,qwerty,2025-04-20T14:52:49-0400,PUT,/profile,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,success
+194.147.142.0,smith,letmein123,2025-04-20T11:52:49-0700,DELETE,/settings,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://unknown.tld/weird,success
+218.92.0.216,johnsmith,admin' --,2025-04-20T20:52:49+0200,OPTIONS,/dashboard,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,success
+185.220.100.252,manager,password123,2025-04-21T00:22:49+0530,PUT,/dashboard,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://google.com,failed
+103.152.220.10,admin,admin' --,2025-04-20T11:52:49-0700,PUT,/usr/login,404,curl/7.68.0,https://someother.com,success
+45.134.20.55,janedoe,123456,2025-04-20T21:52:49+0300,GET,/api/data,200,curl/7.68.0,https://attack.com/malicious,success
+218.92.0.111,service,root123,2025-04-21T03:52:49+0900,POST,/profile,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",-,success
+218.92.0.219,alex,123qwe,2025-04-21T06:52:49+1200,PUT,/auth,502,curl/7.68.0,-,success
+218.92.0.233,bob,12345,2025-04-20T18:52:49+0000,HEAD,/logout,301,PostmanRuntime/7.29.0,https://legit-site.org,failed
+45.148.10.67,david,123qwe,2025-04-20T21:52:49+0300,OPTIONS,/logout,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://secured.com,success
+103.15.28.5,john_doe,x' OR 1=1 --,2025-04-20T20:52:49+0200,DELETE,/register,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),-,failed
+45.66.11.10,bob,admin' --,2025-04-20T14:52:49-0400,GET,/api/data,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/phishing,failed
+218.92.0.217,david,12345,2025-04-21T04:52:49+1000,GET,/register,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://facebook.com,failed
+103.75.201.2,donald,admin' --,2025-04-21T06:52:49+1200,PUT,/dashboard,401,PostmanRuntime/7.29.0,https://google.com,success
+185.220.100.252,alex,toor,2025-04-20T18:52:49+0000,GET,/settings,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://secured.com,success
+146.70.80.184,adam,admin' --,2025-04-21T06:52:49+1200,PATCH,/usr/login,500,python-requests/2.25.1,https://youtube.com,failed
+218.92.0.226,hilary,welcome,2025-04-20T21:52:49+0300,POST,/usr/login,403,curl/7.68.0,-,failed
+218.92.0.227,hilary,admin' #,2025-04-20T22:52:49+0400,GET,/auth,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://facebook.com,failed
+185.142.236.35,donald,welcome,2025-04-21T06:52:49+1200,PUT,/settings,201,python-requests/2.25.1,https://google.com,success
+218.92.0.220,smith,password123,2025-04-20T19:52:49+0100,OPTIONS,/settings,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,failed
+103.75.201.2,john_doe,1234abcd,2025-04-21T03:52:49+0900,POST,/usr/login,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,failed
+218.92.0.218,charlie,welcome,2025-04-21T04:52:49+1000,POST,/profile,403,curl/7.68.0,https://google.com,success
+209.141.38.71,service,root' OR '1'='1,2025-04-21T06:52:49+1200,PATCH,/logout,201,curl/7.68.0,https://legit-site.org,failed
+45.66.11.10,admin,qwerty,2025-04-21T06:52:49+1200,PATCH,/auth,404,curl/7.68.0,https://legit-site.org,success
+198.98.54.17,webmaster,' OR '1'='1,2025-04-20T11:52:49-0700,PUT,/api/data,500,PostmanRuntime/7.29.0,https://example.com,success
+218.92.0.236,guest,<script>alert(1)</script>,2025-04-21T04:52:49+1000,HEAD,/profile,500,curl/7.68.0,https://evil.com/phishing,success
+45.134.20.55,guest,iloveyou,2025-04-20T19:52:49+0100,PUT,/profile,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/redirect,failed
+218.92.0.228,service,1234abcd,2025-04-20T14:52:49-0400,HEAD,/usr/login,500,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://google.com,failed
+45.66.11.10,isabella,pass@123,2025-04-20T11:52:49-0700,HEAD,/settings,404,PostmanRuntime/7.29.0,https://secured.com,success
+198.51.100.7,isabella,passw0rd,2025-04-21T00:22:49+0530,PATCH,/api/user,401,curl/7.68.0,https://legit-site.org,success
+218.92.0.217,service_account,' OR '1'='1,2025-04-21T06:52:49+1200,PUT,/logout,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,success
+185.246.208.200,test,' OR 1=1#,2025-04-20T21:52:49+0300,PATCH,/auth,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),-,failed
+194.147.142.0,donald,""" onmouseover=""alert(1)""",2025-04-20T21:52:49+0300,POST,/api/user,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://legit-site.org,success
+103.152.220.10,angela,' OR 1=1#,2025-04-20T20:52:49+0200,POST,/usr/login,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,failed
+218.92.0.231,david,password,2025-04-20T21:52:49+0300,POST,/profile,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://secured.com,success
+45.227.253.82,service_account,123qwe,2025-04-20T14:52:49-0400,PUT,/dashboard,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://google.com,failed
+218.92.0.217,guest1,admin,2025-04-21T00:22:49+0530,OPTIONS,/admin,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",-,failed
+218.92.0.228,service,root123,2025-04-20T20:52:49+0200,HEAD,/api/data,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,success
+103.75.201.2,david,welcome,2025-04-20T22:52:49+0400,GET,/admin,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://unknown.tld/weird,success
+198.98.54.17,guest,passw0rd,2025-04-20T20:52:49+0200,DELETE,/api/data,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://facebook.com,success
+218.92.0.229,admin,iloveyou,2025-04-20T11:52:49-0700,POST,/dashboard,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://example.com,success
+103.55.38.6,guest,admin,2025-04-21T04:52:49+1000,PUT,/dashboard,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://secured.com,success
+218.92.0.226,hilary,x' OR 1=1 --,2025-04-20T18:52:49+0000,DELETE,/login,500,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,success
+185.220.101.23,root,<script>alert('xss')</script>,2025-04-20T22:52:49+0400,GET,/register,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://secured.com,failed
+218.92.0.236,testuser,toor,2025-04-20T11:52:49-0700,POST,/api/data,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,failed
+185.220.101.23,john_doe,' OR '1'='1,2025-04-20T20:52:49+0200,GET,/api/data,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,success
+209.141.38.71,root,<script>alert('xss')</script>,2025-04-20T18:52:49+0000,HEAD,/api/user,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",-,success
+218.92.0.103,charlie,123456,2025-04-21T04:52:49+1000,OPTIONS,/dashboard,503,python-requests/2.25.1,-,failed
+146.70.80.184,root,root' OR '1'='1,2025-04-20T20:52:49+0200,DELETE,/auth,200,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,success
+103.75.201.2,donald,toor,2025-04-20T20:52:49+0200,POST,/api/user,301,curl/7.68.0,https://hacked.com/exploit,failed
+185.220.101.23,service,123456,2025-04-20T18:52:49+0000,POST,/profile,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://hacked.com/exploit,success
+111.90.147.183,james,12345,2025-04-20T22:52:49+0400,OPTIONS,/logout,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://example.com,failed
+218.92.0.236,dev,qwerty,2025-04-20T20:52:49+0200,GET,/register,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://example.com,failed
+185.142.236.35,david,""" onmouseover=""alert(1)""",2025-04-20T22:52:49+0400,PATCH,/admin,403,python-requests/2.25.1,https://evil.com/phishing,success
+89.234.157.254,root,root' OR '1'='1,2025-04-20T22:52:49+0400,GET,/api/user,400,curl/7.68.0,https://facebook.com,failed
+203.190.54.1,charlie,letmein123,2025-04-20T21:52:49+0300,OPTIONS,/settings,301,curl/7.68.0,https://facebook.com,success
+218.92.0.230,dev,admin' --,2025-04-20T20:52:49+0200,PATCH,/auth,502,python-requests/2.25.1,https://bot.com/spam,failed
+103.207.38.34,testuser,root123,2025-04-21T06:52:49+1200,PUT,/logout,403,python-requests/2.25.1,https://example.com,success
+103.207.38.34,service,123qwe,2025-04-20T11:52:49-0700,GET,/auth,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,failed
+111.90.147.183,root,123456,2025-04-20T20:52:49+0200,POST,/auth,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/redirect,success
+45.134.20.55,james,password123,2025-04-20T19:52:49+0100,GET,/api/user,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://someother.com,success
+103.75.201.2,bob,' OR 1=1#,2025-04-20T22:52:49+0400,PUT,/api/data,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://someother.com,failed
+103.86.49.149,service,passw0rd,2025-04-20T22:52:49+0400,DELETE,/logout,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,failed
+109.248.148.55,guest1,root' OR '1'='1,2025-04-21T06:52:49+1200,GET,/dashboard,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://google.com,failed
+103.75.201.2,smith,<script>alert(1)</script>,2025-04-20T14:52:49-0400,POST,/api/data,502,PostmanRuntime/7.29.0,https://google.com,failed
+103.152.220.10,angela,root' OR '1'='1,2025-04-20T20:52:49+0200,HEAD,/auth,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://secured.com,success
+218.92.0.225,david,'; DROP TABLE users; --,2025-04-21T03:52:49+0900,POST,/dashboard,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://someother.com,success
+218.92.0.218,service,root' OR '1'='1,2025-04-20T20:52:49+0200,GET,/api/data,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://youtube.com,failed
+141.98.10.91,james,root123,2025-04-20T22:52:49+0400,PATCH,/admin,502,PostmanRuntime/7.29.0,https://evil.com/redirect,failed
+134.209.120.69,manager,<script>alert('xss')</script>,2025-04-21T00:22:49+0530,PUT,/api/data,400,PostmanRuntime/7.29.0,https://example.com,failed
+218.92.0.226,johnsmith,root,2025-04-20T18:52:49+0000,POST,/logout,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,failed
+134.209.120.69,donald,toor,2025-04-21T04:52:49+1000,GET,/dashboard,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,success
+94.102.49.193,root,password123,2025-04-21T06:52:49+1200,PATCH,/logout,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/phishing,failed
+218.92.0.221,service_account,' OR 1=1#,2025-04-21T06:52:49+1200,PATCH,/dashboard,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/redirect,failed
+103.86.49.149,donald,root123,2025-04-21T00:22:49+0530,PUT,/dashboard,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://example.com,failed
+103.55.38.6,dbadmin,welcome,2025-04-20T19:52:49+0100,HEAD,/api/data,500,PostmanRuntime/7.29.0,https://evil.com/phishing,failed
+218.92.0.229,root,admin,2025-04-20T20:52:49+0200,POST,/admin,200,curl/7.68.0,https://unknown.tld/weird,failed
+218.92.0.111,service_account,pass@123,2025-04-20T20:52:49+0200,GET,/usr/login,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,failed
+218.92.0.111,donald,'; DROP TABLE users; --,2025-04-21T04:52:49+1000,PATCH,/logout,502,PostmanRuntime/7.29.0,https://example.com,success
+45.66.11.10,angela,123qwe,2025-04-20T14:52:49-0400,PUT,/profile,403,curl/7.68.0,https://evil.com/redirect,failed
+103.75.201.2,guest1,admin' --,2025-04-21T03:52:49+0900,POST,/api/data,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://bot.com/spam,failed
+185.129.62.62,alex,admin' --,2025-04-20T20:52:49+0200,PUT,/profile,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/redirect,failed
+203.0.113.5,admin,admin' --,2025-04-21T00:22:49+0530,OPTIONS,/profile,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://attack.com/malicious,failed
+37.123.163.58,alex,' OR '1'='1,2025-04-20T21:52:49+0300,DELETE,/logout,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,success
+218.92.0.218,service_account,pass@123,2025-04-20T14:52:49-0400,GET,/usr/login,403,PostmanRuntime/7.29.0,https://legit-site.org,failed
+218.92.0.226,adam,root123,2025-04-20T21:52:49+0300,GET,/logout,404,python-requests/2.25.1,https://unknown.tld/weird,success
+218.92.0.216,eve,' OR '1'='1,2025-04-20T18:52:49+0000,DELETE,/dashboard,201,curl/7.68.0,https://google.com,failed
+218.92.0.233,testuser,root,2025-04-20T20:52:49+0200,GET,/api/user,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,failed
+37.123.163.58,john_doe,passw0rd,2025-04-20T20:52:49+0200,PATCH,/settings,301,PostmanRuntime/7.29.0,https://secured.com,success
+111.90.147.183,admin,password1,2025-04-20T20:52:49+0200,HEAD,/logout,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,failed
+185.100.87.202,janedoe,admin' --,2025-04-20T20:52:49+0200,HEAD,/profile,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://legit-site.org,failed
+185.220.100.252,eve,' OR 1=1#,2025-04-20T11:52:49-0700,PATCH,/api/data,400,curl/7.68.0,https://legit-site.org,success
+203.0.113.5,root,' OR '1'='1,2025-04-21T03:52:49+0900,POST,/api/data,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://someother.com,success
+218.92.0.225,webmaster,123qwe,2025-04-21T00:22:49+0530,DELETE,/usr/login,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://someother.com,failed
+218.92.0.218,service_account,pass@123,2025-04-20T18:52:49+0000,DELETE,/api/user,503,python-requests/2.25.1,https://youtube.com,success
+45.66.11.10,hilary,admin' --,2025-04-20T19:52:49+0100,PUT,/logout,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://example.com,success
+103.207.38.34,user,iloveyou,2025-04-21T00:22:49+0530,PUT,/login,401,python-requests/2.25.1,https://example.com,failed
+218.92.0.233,hilary,123qwe,2025-04-20T21:52:49+0300,DELETE,/api/user,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://facebook.com,failed
+218.92.0.236,charlie,1234abcd,2025-04-20T11:52:49-0700,OPTIONS,/auth,404,curl/7.68.0,https://hacked.com/exploit,success
+218.92.0.231,dbadmin,123456,2025-04-20T19:52:49+0100,OPTIONS,/admin,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://hacked.com/exploit,failed
+185.220.101.23,guest1,""" onmouseover=""alert(1)""",2025-04-20T14:52:49-0400,PATCH,/register,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://someother.com,success
+185.129.62.62,dbadmin,qwerty,2025-04-20T11:52:49-0700,PATCH,/profile,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://example.com,failed
+218.92.0.219,guest1,<script>alert('xss')</script>,2025-04-20T19:52:49+0100,PUT,/admin,201,python-requests/2.25.1,https://evil.com/redirect,success
+10.0.0.2,david,<script>alert('xss')</script>,2025-04-21T00:22:49+0530,PUT,/register,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/phishing,failed
+185.246.208.200,webmaster,admin,2025-04-20T20:52:49+0200,PATCH,/login,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://legit-site.org,failed
+45.227.253.82,smith,passw0rd,2025-04-21T03:52:49+0900,HEAD,/logout,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/phishing,success
+218.92.0.220,dev,' OR '1'='1,2025-04-21T06:52:49+1200,OPTIONS,/dashboard,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://secured.com,success
+218.92.0.221,root,iloveyou,2025-04-20T19:52:49+0100,POST,/register,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://bot.com/spam,failed
+45.148.10.67,smith,pass@123,2025-04-20T20:52:49+0200,HEAD,/api/data,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://secured.com,failed
+218.92.0.219,angela,pass@123,2025-04-21T00:22:49+0530,OPTIONS,/api/data,500,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,failed
+194.147.142.0,dev,password,2025-04-20T21:52:49+0300,GET,/login,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,failed
+185.220.100.252,dbadmin,admin' --,2025-04-20T19:52:49+0100,DELETE,/logout,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,success
+193.218.118.110,donald,pass@123,2025-04-20T20:52:49+0200,POST,/api/data,200,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,failed
+172.16.0.3,adam,admin' --,2025-04-21T04:52:49+1000,PUT,/api/user,502,PostmanRuntime/7.29.0,https://youtube.com,failed
+198.51.100.7,janedoe,password1,2025-04-21T00:22:49+0530,PATCH,/profile,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://attack.com/malicious,failed
+37.123.163.58,james,x' OR 1=1 --,2025-04-21T03:52:49+0900,DELETE,/api/data,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,success
+193.218.118.110,root,iloveyou,2025-04-20T21:52:49+0300,PATCH,/dashboard,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://unknown.tld/weird,success
+185.220.101.23,dev,admin' --,2025-04-21T04:52:49+1000,HEAD,/admin,502,PostmanRuntime/7.29.0,https://bot.com/spam,success
+218.92.0.230,root,1234abcd,2025-04-20T21:52:49+0300,POST,/dashboard,400,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://unknown.tld/weird,failed
+45.83.64.1,charlie,qwerty,2025-04-21T00:22:49+0530,POST,/usr/login,500,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://youtube.com,failed
+103.15.28.5,eve,123qwe,2025-04-21T06:52:49+1200,DELETE,/logout,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://legit-site.org,success
+218.92.0.229,root,1234abcd,2025-04-20T11:52:49-0700,GET,/api/user,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://facebook.com,failed
+185.100.87.202,root,qwerty,2025-04-21T04:52:49+1000,OPTIONS,/admin,200,python-requests/2.25.1,https://youtube.com,success
+103.15.28.5,isabella,'; DROP TABLE users; --,2025-04-21T03:52:49+0900,PATCH,/register,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://youtube.com,success
+103.75.201.2,guest,root,2025-04-20T20:52:49+0200,HEAD,/profile,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://facebook.com,failed
+10.0.0.2,guest,password123,2025-04-20T14:52:49-0400,OPTIONS,/api/data,500,curl/7.68.0,https://google.com,success
+193.32.126.210,hacker,admin' --,2025-04-20T18:52:49+0000,PUT,/profile,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,failed
+89.234.157.254,hacker,iloveyou,2025-04-20T20:52:49+0200,PATCH,/api/user,200,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,success
+141.98.10.91,david,passw0rd,2025-04-20T22:52:49+0400,DELETE,/api/user,503,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/phishing,success
+89.234.157.254,dev,12345,2025-04-21T03:52:49+0900,POST,/api/user,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://someother.com,success
+185.107.56.231,test,password,2025-04-21T00:22:49+0530,DELETE,/dashboard,500,PostmanRuntime/7.29.0,https://someother.com,failed
+141.98.10.91,charlie,root123,2025-04-20T14:52:49-0400,HEAD,/admin,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://facebook.com,success
+218.92.0.217,alex,123456,2025-04-20T11:52:49-0700,OPTIONS,/admin,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/phishing,success
+45.148.10.67,hacker,x' OR 1=1 --,2025-04-20T11:52:49-0700,OPTIONS,/api/data,503,curl/7.68.0,https://secured.com,failed
+94.102.49.193,service_account,<script>alert(1)</script>,2025-04-20T20:52:49+0200,OPTIONS,/login,404,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,success
+185.220.100.252,john_doe,password123,2025-04-20T20:52:49+0200,PATCH,/api/user,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://bot.com/spam,success
+89.234.157.254,root,letmein123,2025-04-20T20:52:49+0200,OPTIONS,/logout,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://legit-site.org,failed
+103.75.201.2,angela,admin' --,2025-04-20T20:52:49+0200,GET,/register,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,success
+134.209.120.69,root,admin' --,2025-04-20T18:52:49+0000,PATCH,/admin,502,python-requests/2.25.1,https://attack.com/malicious,success
+103.75.201.2,david,password1,2025-04-20T14:52:49-0400,POST,/login,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://example.com,success
+89.234.157.254,janedoe,passw0rd,2025-04-21T06:52:49+1200,PUT,/login,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://unknown.tld/weird,success
+185.142.236.35,dbadmin,""" onmouseover=""alert(1)""",2025-04-20T19:52:49+0100,GET,/dashboard,500,PostmanRuntime/7.29.0,https://unknown.tld/weird,failed
+192.168.1.1,john_doe,password123,2025-04-20T20:52:49+0200,PATCH,/profile,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://youtube.com,failed
+218.92.0.236,james,toor,2025-04-20T21:52:49+0300,HEAD,/logout,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://someother.com,success
+218.92.0.220,eve,root' OR '1'='1,2025-04-20T21:52:49+0300,OPTIONS,/api/data,201,curl/7.68.0,https://bot.com/spam,failed
+218.92.0.229,adam,welcome,2025-04-21T06:52:49+1200,OPTIONS,/logout,401,PostmanRuntime/7.29.0,https://legit-site.org,success
+103.207.38.34,service,welcome,2025-04-20T19:52:49+0100,GET,/api/user,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://google.com,failed
+185.220.100.252,root,iloveyou,2025-04-21T03:52:49+0900,PUT,/auth,503,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,success
+103.207.38.34,service,""" onmouseover=""alert(1)""",2025-04-20T11:52:49-0700,DELETE,/logout,404,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,success
+45.134.20.55,david,1234abcd,2025-04-20T19:52:49+0100,PUT,/logout,401,curl/7.68.0,https://google.com,success
+45.148.10.67,adam,root' OR '1'='1,2025-04-21T06:52:49+1200,POST,/settings,400,PostmanRuntime/7.29.0,https://secured.com,success
+218.92.0.227,alex,' OR '1'='1,2025-04-20T20:52:49+0200,HEAD,/settings,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://google.com,success
+203.0.113.5,john_doe,root123,2025-04-20T20:52:49+0200,GET,/settings,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://youtube.com,success
+218.92.0.216,guest,' OR '1'='1,2025-04-20T22:52:49+0400,PATCH,/admin,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://unknown.tld/weird,success
+218.92.0.220,janedoe,""" onmouseover=""alert(1)""",2025-04-20T14:52:49-0400,DELETE,/login,500,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://facebook.com,success
+103.207.38.34,janedoe,<script>alert(1)</script>,2025-04-20T19:52:49+0100,GET,/usr/login,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/redirect,failed
+103.55.38.6,angela,12345,2025-04-21T06:52:49+1200,PATCH,/auth,201,curl/7.68.0,https://legit-site.org,success
+193.32.126.210,dev,'; DROP TABLE users; --,2025-04-20T21:52:49+0300,OPTIONS,/settings,403,PostmanRuntime/7.29.0,https://someother.com,failed
+185.220.101.23,alex,admin' #,2025-04-21T04:52:49+1000,PUT,/settings,200,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,success
+218.92.0.219,service,123qwe,2025-04-20T11:52:49-0700,PATCH,/api/user,500,python-requests/2.25.1,https://example.com,success
+185.220.101.23,adam,root123,2025-04-20T20:52:49+0200,OPTIONS,/profile,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/phishing,success
+194.147.142.0,service,root,2025-04-20T14:52:49-0400,POST,/logout,502,python-requests/2.25.1,https://google.com,failed
+209.141.38.71,testuser,'; DROP TABLE users; --,2025-04-20T22:52:49+0400,DELETE,/usr/login,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://attack.com/malicious,failed
+141.98.10.91,eve,root,2025-04-20T18:52:49+0000,PUT,/api/data,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,failed
+185.220.101.23,dev,1234abcd,2025-04-21T04:52:49+1000,HEAD,/usr/login,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://example.com,success
+185.129.62.62,dbadmin,123qwe,2025-04-20T18:52:49+0000,POST,/admin,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://unknown.tld/weird,failed
+218.92.0.217,guest,1234abcd,2025-04-20T14:52:49-0400,GET,/dashboard,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,failed
+45.83.64.1,janedoe,password,2025-04-20T20:52:49+0200,DELETE,/settings,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,success
+185.220.100.252,root,' OR '1'='1,2025-04-20T20:52:49+0200,DELETE,/profile,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://unknown.tld/weird,failed
+218.92.0.231,root,'; DROP TABLE users; --,2025-04-21T03:52:49+0900,OPTIONS,/api/user,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,failed
+37.123.163.58,guest,admin' #,2025-04-20T11:52:49-0700,HEAD,/logout,301,PostmanRuntime/7.29.0,https://bot.com/spam,success
+103.75.201.2,admin,password123,2025-04-20T20:52:49+0200,PUT,/admin,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://legit-site.org,failed
+185.129.62.62,service_account,root123,2025-04-20T20:52:49+0200,OPTIONS,/api/user,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,failed
+10.0.0.2,smith,<script>alert(1)</script>,2025-04-21T06:52:49+1200,PATCH,/usr/login,503,PostmanRuntime/7.29.0,https://youtube.com,failed
+103.15.28.5,smith,x' OR 1=1 --,2025-04-21T03:52:49+0900,HEAD,/auth,500,python-requests/2.25.1,https://example.com,failed
+185.220.100.252,bob,""" onmouseover=""alert(1)""",2025-04-20T20:52:49+0200,OPTIONS,/usr/login,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://attack.com/malicious,failed
+45.66.11.10,james,admin,2025-04-20T18:52:49+0000,DELETE,/logout,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://attack.com/malicious,success
+218.92.0.236,adam,root,2025-04-20T20:52:49+0200,HEAD,/logout,503,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/phishing,failed
+192.42.116.16,user,<script>alert('xss')</script>,2025-04-20T11:52:49-0700,PUT,/admin,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,success
+192.168.1.1,david,admin' --,2025-04-20T21:52:49+0300,GET,/auth,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://attack.com/malicious,failed
+218.92.0.103,hilary,root' OR '1'='1,2025-04-20T21:52:49+0300,POST,/api/data,403,PostmanRuntime/7.29.0,https://bot.com/spam,success
+146.70.80.184,smith,passw0rd,2025-04-20T11:52:49-0700,OPTIONS,/admin,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,failed
+185.220.100.252,test,root123,2025-04-20T22:52:49+0400,DELETE,/profile,404,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://bot.com/spam,success
+218.92.0.103,user,admin' #,2025-04-20T14:52:49-0400,POST,/logout,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://bot.com/spam,failed
+218.92.0.220,testuser,admin' --,2025-04-20T19:52:49+0100,GET,/logout,201,python-requests/2.25.1,https://legit-site.org,failed
+218.92.0.218,service_account,<script>alert('xss')</script>,2025-04-20T11:52:49-0700,GET,/usr/login,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://youtube.com,failed
+45.148.10.67,root,' OR 1=1#,2025-04-20T18:52:49+0000,PATCH,/auth,200,PostmanRuntime/7.29.0,https://unknown.tld/weird,failed
+218.92.0.223,testuser,admin,2025-04-21T00:22:49+0530,HEAD,/api/user,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://facebook.com,success
+185.107.56.231,root,admin' --,2025-04-20T22:52:49+0400,PUT,/api/user,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,failed
+218.92.0.229,service_account,123qwe,2025-04-20T19:52:49+0100,PUT,/api/data,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://google.com,failed
+218.92.0.227,dev,welcome,2025-04-21T03:52:49+0900,POST,/register,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://bot.com/spam,success
+218.92.0.228,hacker,root123,2025-04-21T04:52:49+1000,PUT,/api/data,301,PostmanRuntime/7.29.0,https://secured.com,success
+103.86.49.149,janedoe,root123,2025-04-21T03:52:49+0900,HEAD,/auth,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,success
+218.92.0.221,adam,password123,2025-04-20T11:52:49-0700,PATCH,/settings,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/phishing,failed
+192.168.1.1,eve,password1,2025-04-20T21:52:49+0300,PUT,/login,500,python-requests/2.25.1,-,success
+218.92.0.219,guest1,'; DROP TABLE users; --,2025-04-20T18:52:49+0000,POST,/usr/login,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),-,failed
+218.92.0.227,janedoe,12345,2025-04-21T00:22:49+0530,POST,/api/user,200,curl/7.68.0,https://legit-site.org,success
+198.98.54.17,john_doe,pass@123,2025-04-20T21:52:49+0300,PATCH,/api/user,400,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/redirect,success
+45.83.64.1,adam,qwerty,2025-04-21T03:52:49+0900,PATCH,/register,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,failed
+109.248.148.55,donald,root,2025-04-20T14:52:49-0400,POST,/dashboard,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,success
+218.92.0.229,testuser,welcome,2025-04-20T20:52:49+0200,POST,/admin,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://example.com,failed
+218.92.0.233,donald,admin' --,2025-04-20T14:52:49-0400,DELETE,/dashboard,500,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/redirect,failed
+146.70.80.184,service,<script>alert('xss')</script>,2025-04-20T21:52:49+0300,DELETE,/login,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://bot.com/spam,failed
+185.246.208.200,hacker,admin' --,2025-04-20T21:52:49+0300,DELETE,/api/user,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,failed
+218.92.0.227,adam,1234abcd,2025-04-21T03:52:49+0900,POST,/api/user,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://example.com,failed
+172.16.0.3,guest,letmein,2025-04-20T18:52:49+0000,GET,/usr/login,503,PostmanRuntime/7.29.0,-,failed
+146.70.80.184,alice,<script>alert(1)</script>,2025-04-21T06:52:49+1200,POST,/logout,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,failed
+185.142.236.35,adam,password1,2025-04-20T22:52:49+0400,OPTIONS,/admin,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://unknown.tld/weird,failed
+203.190.54.1,dbadmin,passw0rd,2025-04-20T14:52:49-0400,DELETE,/register,401,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://legit-site.org,success
+218.92.0.220,manager,toor,2025-04-21T00:22:49+0530,DELETE,/usr/login,201,PostmanRuntime/7.29.0,https://hacked.com/exploit,success
+192.168.1.1,guest1,root123,2025-04-20T22:52:49+0400,PUT,/settings,500,python-requests/2.25.1,https://unknown.tld/weird,failed
+193.32.126.210,root,1234abcd,2025-04-21T06:52:49+1200,DELETE,/dashboard,403,PostmanRuntime/7.29.0,https://evil.com/redirect,success
+185.246.208.200,user,welcome,2025-04-20T20:52:49+0200,HEAD,/logout,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://hacked.com/exploit,success
+45.83.64.1,donald,toor,2025-04-20T21:52:49+0300,PUT,/register,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://facebook.com,failed
+194.147.142.0,charlie,1234abcd,2025-04-20T11:52:49-0700,DELETE,/api/user,201,PostmanRuntime/7.29.0,https://evil.com/phishing,failed
+193.218.118.110,angela,password123,2025-04-21T03:52:49+0900,GET,/usr/login,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://hacked.com/exploit,failed
+89.234.157.254,service_account,password,2025-04-21T06:52:49+1200,DELETE,/profile,200,python-requests/2.25.1,https://youtube.com,failed
+218.92.0.226,alex,admin' #,2025-04-21T00:22:49+0530,DELETE,/api/data,404,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/redirect,failed
+111.90.147.183,dbadmin,12345,2025-04-20T20:52:49+0200,GET,/auth,200,PostmanRuntime/7.29.0,https://evil.com/phishing,failed
+209.141.38.71,admin,welcome,2025-04-21T06:52:49+1200,PATCH,/auth,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://bot.com/spam,failed
+94.102.49.193,donald,' OR 1=1#,2025-04-21T03:52:49+0900,GET,/dashboard,503,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://unknown.tld/weird,failed
+94.102.49.193,charlie,iloveyou,2025-04-20T18:52:49+0000,POST,/logout,500,curl/7.68.0,https://legit-site.org,success
+218.92.0.228,james,welcome,2025-04-20T11:52:49-0700,OPTIONS,/profile,503,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://google.com,failed
+218.92.0.231,donald,admin' --,2025-04-20T21:52:49+0300,DELETE,/api/user,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,success
+185.142.236.35,hacker,password123,2025-04-20T11:52:49-0700,POST,/settings,500,PostmanRuntime/7.29.0,https://google.com,failed
+218.92.0.231,james,x' OR 1=1 --,2025-04-20T22:52:49+0400,HEAD,/settings,201,curl/7.68.0,https://bot.com/spam,failed
+198.98.54.17,john_doe,admin' #,2025-04-20T20:52:49+0200,POST,/profile,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://unknown.tld/weird,failed
+103.55.38.6,dbadmin,123456,2025-04-20T22:52:49+0400,GET,/profile,502,python-requests/2.25.1,https://google.com,failed
+209.141.38.71,bob,123456,2025-04-20T22:52:49+0400,PATCH,/register,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,success
+218.92.0.226,guest,admin' --,2025-04-21T03:52:49+0900,DELETE,/register,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),-,success
+218.92.0.226,manager,'; DROP TABLE users; --,2025-04-20T19:52:49+0100,OPTIONS,/auth,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://facebook.com,failed
+185.220.101.23,isabella,letmein,2025-04-21T03:52:49+0900,POST,/login,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://someother.com,success
+103.75.201.2,hacker,admin' --,2025-04-21T06:52:49+1200,GET,/logout,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,success
+103.75.201.2,john_doe,password1,2025-04-20T18:52:49+0000,PATCH,/login,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/phishing,success
+103.55.38.6,isabella,root123,2025-04-21T06:52:49+1200,DELETE,/login,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://legit-site.org,failed
+103.55.38.6,john_doe,' OR 1=1#,2025-04-20T21:52:49+0300,GET,/register,200,python-requests/2.25.1,https://bot.com/spam,success
+218.92.0.111,donald,' OR '1'='1,2025-04-20T20:52:49+0200,PUT,/login,403,python-requests/2.25.1,https://legit-site.org,success
+218.92.0.111,user,' OR 1=1#,2025-04-20T21:52:49+0300,HEAD,/usr/login,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,failed
+218.92.0.216,test,password123,2025-04-20T18:52:49+0000,DELETE,/auth,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://unknown.tld/weird,success
+37.123.163.58,adam,qwerty,2025-04-20T22:52:49+0400,HEAD,/auth,301,PostmanRuntime/7.29.0,https://google.com,success
+103.86.49.149,guest,toor,2025-04-20T18:52:49+0000,OPTIONS,/dashboard,301,PostmanRuntime/7.29.0,https://bot.com/spam,success
+218.92.0.228,user,toor,2025-04-21T03:52:49+0900,GET,/settings,500,python-requests/2.25.1,https://someother.com,success
+89.234.157.254,charlie,password1,2025-04-20T22:52:49+0400,POST,/settings,400,PostmanRuntime/7.29.0,https://youtube.com,failed
+185.220.101.23,root,123qwe,2025-04-20T20:52:49+0200,POST,/settings,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/redirect,success
+203.190.54.1,testuser,' OR '1'='1,2025-04-21T00:22:49+0530,PUT,/api/data,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/redirect,success
+103.55.38.6,alice,iloveyou,2025-04-20T20:52:49+0200,GET,/api/data,502,python-requests/2.25.1,https://someother.com,success
+37.123.163.58,testuser,1234abcd,2025-04-20T20:52:49+0200,PUT,/login,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/phishing,success
+209.141.38.71,guest,""" onmouseover=""alert(1)""",2025-04-21T03:52:49+0900,HEAD,/admin,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://unknown.tld/weird,success
+218.92.0.233,charlie,12345,2025-04-20T11:52:49-0700,OPTIONS,/usr/login,201,Mozilla/5.0 (Windows NT 10.0; Win64; x64),-,success
+218.92.0.227,alice,""" onmouseover=""alert(1)""",2025-04-20T19:52:49+0100,PUT,/dashboard,401,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,failed
+185.220.101.23,testuser,root' OR '1'='1,2025-04-20T21:52:49+0300,HEAD,/logout,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://google.com,success
+111.90.147.183,dbadmin,'; DROP TABLE users; --,2025-04-20T20:52:49+0200,HEAD,/settings,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://someother.com,failed
+89.234.157.254,bob,x' OR 1=1 --,2025-04-20T19:52:49+0100,PUT,/dashboard,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,success
+103.86.49.149,james,qwerty,2025-04-21T04:52:49+1000,OPTIONS,/api/user,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://example.com,failed
+218.92.0.228,service_account,letmein,2025-04-20T22:52:49+0400,POST,/usr/login,401,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,failed
+185.220.101.23,bob,toor,2025-04-20T20:52:49+0200,GET,/login,401,PostmanRuntime/7.29.0,https://hacked.com/exploit,success
+218.92.0.223,smith,qwerty,2025-04-20T19:52:49+0100,PUT,/usr/login,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",-,failed
+185.142.236.35,angela,password,2025-04-20T22:52:49+0400,OPTIONS,/settings,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://youtube.com,failed
+10.0.0.2,guest,root123,2025-04-20T11:52:49-0700,GET,/logout,201,PostmanRuntime/7.29.0,https://attack.com/malicious,success
+185.107.56.231,david,welcome,2025-04-20T19:52:49+0100,OPTIONS,/logout,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,success
+218.92.0.217,webmaster,x' OR 1=1 --,2025-04-20T18:52:49+0000,PUT,/register,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://facebook.com,success
+218.92.0.229,angela,iloveyou,2025-04-20T14:52:49-0400,GET,/login,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://youtube.com,success
+45.66.11.10,webmaster,""" onmouseover=""alert(1)""",2025-04-20T14:52:49-0400,OPTIONS,/logout,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,success
+193.32.126.210,dbadmin,welcome,2025-04-20T20:52:49+0200,PUT,/api/user,403,curl/7.68.0,https://legit-site.org,failed
+218.92.0.221,guest1,1234abcd,2025-04-21T04:52:49+1000,GET,/admin,401,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,success
+218.92.0.219,service,' OR '1'='1,2025-04-21T00:22:49+0530,GET,/profile,201,curl/7.68.0,https://unknown.tld/weird,failed
+185.107.56.231,janedoe,letmein,2025-04-20T19:52:49+0100,PUT,/auth,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://hacked.com/exploit,success
+193.218.118.110,dev,<script>alert('xss')</script>,2025-04-20T22:52:49+0400,GET,/login,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://bot.com/spam,failed
+45.66.11.10,manager,'; DROP TABLE users; --,2025-04-20T18:52:49+0000,DELETE,/settings,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,failed
+185.220.100.252,angela,'; DROP TABLE users; --,2025-04-21T03:52:49+0900,DELETE,/api/data,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/phishing,success
+10.0.0.2,testuser,1234abcd,2025-04-21T06:52:49+1200,PUT,/profile,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,failed
+45.66.11.10,charlie,passw0rd,2025-04-20T22:52:49+0400,HEAD,/logout,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://example.com,failed
+193.32.126.210,root,passw0rd,2025-04-21T04:52:49+1000,POST,/dashboard,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,failed
+185.220.100.252,test,admin,2025-04-21T03:52:49+0900,GET,/usr/login,500,python-requests/2.25.1,https://hacked.com/exploit,failed
+111.90.147.183,bob,1234abcd,2025-04-20T11:52:49-0700,GET,/profile,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://hacked.com/exploit,success
+198.51.100.7,james,'; DROP TABLE users; --,2025-04-20T19:52:49+0100,PATCH,/register,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,failed
+218.92.0.216,adam,password123,2025-04-21T06:52:49+1200,PUT,/api/user,404,PostmanRuntime/7.29.0,https://evil.com/phishing,success
+218.92.0.217,test,1234abcd,2025-04-21T00:22:49+0530,OPTIONS,/api/data,201,curl/7.68.0,https://example.com,success
+185.246.208.200,adam,admin,2025-04-20T22:52:49+0400,DELETE,/logout,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://secured.com,failed
+103.86.49.149,janedoe,12345,2025-04-20T14:52:49-0400,DELETE,/profile,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,success
+103.55.38.6,testuser,<script>alert(1)</script>,2025-04-20T20:52:49+0200,PATCH,/api/user,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://attack.com/malicious,failed
+192.168.1.1,alice,<script>alert(1)</script>,2025-04-20T21:52:49+0300,PUT,/auth,401,python-requests/2.25.1,https://google.com,success
+103.86.49.149,root,root123,2025-04-20T11:52:49-0700,HEAD,/admin,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,failed
+218.92.0.225,bob,admin,2025-04-21T03:52:49+0900,DELETE,/api/data,404,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/phishing,success
+185.129.62.62,bob,root,2025-04-20T20:52:49+0200,DELETE,/register,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,failed
+185.246.208.200,test,welcome,2025-04-20T14:52:49-0400,OPTIONS,/register,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,failed
+198.51.100.7,service,root123,2025-04-21T06:52:49+1200,DELETE,/api/data,301,curl/7.68.0,https://example.com,failed
+218.92.0.217,service,qwerty,2025-04-20T19:52:49+0100,GET,/auth,403,python-requests/2.25.1,https://unknown.tld/weird,success
+193.32.126.210,manager,123qwe,2025-04-21T03:52:49+0900,GET,/auth,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://bot.com/spam,success
+103.207.38.34,manager,admin' --,2025-04-20T18:52:49+0000,OPTIONS,/register,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,failed
+193.32.126.210,alice,root,2025-04-21T00:22:49+0530,POST,/api/user,400,curl/7.68.0,https://evil.com/redirect,failed
+218.92.0.236,admin,admin,2025-04-21T04:52:49+1000,POST,/api/user,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,failed
+185.100.87.202,charlie,1234abcd,2025-04-20T20:52:49+0200,OPTIONS,/auth,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://someother.com,failed
+185.100.87.202,charlie,iloveyou,2025-04-21T04:52:49+1000,PATCH,/logout,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,failed
+45.227.253.82,eve,passw0rd,2025-04-20T21:52:49+0300,OPTIONS,/logout,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://hacked.com/exploit,failed
+218.92.0.228,test,root' OR '1'='1,2025-04-20T11:52:49-0700,POST,/dashboard,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://legit-site.org,success
+111.90.147.183,eve,root,2025-04-20T20:52:49+0200,PATCH,/dashboard,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://secured.com,failed
+198.51.100.7,root,letmein123,2025-04-20T18:52:49+0000,PATCH,/login,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://example.com,failed
+37.123.163.58,james,welcome,2025-04-20T20:52:49+0200,HEAD,/login,401,PostmanRuntime/7.29.0,https://evil.com/redirect,failed
+146.70.80.184,charlie,password,2025-04-21T03:52:49+0900,GET,/auth,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://someother.com,failed
+218.92.0.231,alice,x' OR 1=1 --,2025-04-20T21:52:49+0300,GET,/usr/login,401,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/phishing,success
+193.218.118.110,hacker,qwerty,2025-04-20T14:52:49-0400,PUT,/dashboard,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://someother.com,success
+218.92.0.111,dev,iloveyou,2025-04-20T18:52:49+0000,PATCH,/settings,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/redirect,success
+146.70.80.184,john_doe,letmein123,2025-04-20T14:52:49-0400,PATCH,/api/user,503,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,success
+45.148.10.67,root,passw0rd,2025-04-21T03:52:49+0900,GET,/dashboard,401,PostmanRuntime/7.29.0,https://secured.com,failed
+193.218.118.110,root,root' OR '1'='1,2025-04-20T14:52:49-0400,PUT,/settings,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://youtube.com,failed
+198.51.100.7,janedoe,12345,2025-04-20T19:52:49+0100,PUT,/api/data,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),-,success
+218.92.0.230,angela,123456,2025-04-20T22:52:49+0400,PATCH,/api/user,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://example.com,failed
+10.0.0.2,david,x' OR 1=1 --,2025-04-20T22:52:49+0400,DELETE,/register,401,PostmanRuntime/7.29.0,https://attack.com/malicious,success
+203.0.113.5,admin,root123,2025-04-20T20:52:49+0200,OPTIONS,/login,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://bot.com/spam,success
+185.142.236.35,dev,x' OR 1=1 --,2025-04-21T04:52:49+1000,OPTIONS,/register,301,PostmanRuntime/7.29.0,https://secured.com,failed
+141.98.10.91,bob,123qwe,2025-04-20T14:52:49-0400,POST,/login,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,failed
+218.92.0.227,root,welcome,2025-04-20T20:52:49+0200,DELETE,/login,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,success
+45.148.10.67,hacker,root' OR '1'='1,2025-04-20T20:52:49+0200,POST,/api/data,502,PostmanRuntime/7.29.0,https://someother.com,failed
+192.168.1.1,janedoe,letmein123,2025-04-20T21:52:49+0300,POST,/api/data,200,PostmanRuntime/7.29.0,https://evil.com/phishing,failed
+45.66.11.10,service_account,root123,2025-04-20T22:52:49+0400,PUT,/settings,500,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://example.com,failed
+185.100.87.202,smith,root,2025-04-21T00:22:49+0530,POST,/profile,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,success
+111.90.147.183,testuser,password1,2025-04-20T19:52:49+0100,HEAD,/logout,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://legit-site.org,success
+218.92.0.221,user,x' OR 1=1 --,2025-04-21T00:22:49+0530,DELETE,/admin,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,success
+218.92.0.223,service,password123,2025-04-20T20:52:49+0200,PUT,/admin,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,failed
+194.147.142.0,guest,qwerty,2025-04-20T20:52:49+0200,PATCH,/admin,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://facebook.com,success
+45.134.20.55,dbadmin,toor,2025-04-21T06:52:49+1200,PUT,/api/user,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,failed
+218.92.0.227,johnsmith,1234abcd,2025-04-21T04:52:49+1000,PUT,/logout,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",-,failed
+218.92.0.225,johnsmith,1234abcd,2025-04-20T20:52:49+0200,HEAD,/auth,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://legit-site.org,success
+111.90.147.183,alice,root123,2025-04-20T18:52:50+0000,PATCH,/register,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://facebook.com,success
+103.207.38.34,hilary,letmein123,2025-04-20T14:52:50-0400,GET,/login,301,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,success
+218.92.0.233,root,password123,2025-04-20T20:52:50+0200,PATCH,/settings,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://attack.com/malicious,failed
+89.234.157.254,admin,root123,2025-04-21T06:52:50+1200,POST,/admin,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://example.com,failed
+146.70.80.184,user,letmein123,2025-04-20T20:52:50+0200,PATCH,/admin,401,PostmanRuntime/7.29.0,https://evil.com/phishing,success
+218.92.0.231,admin,iloveyou,2025-04-21T06:52:50+1200,HEAD,/admin,404,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://google.com,failed
+198.51.100.7,hacker,password1,2025-04-21T06:52:50+1200,GET,/settings,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,failed
+194.147.142.0,adam,iloveyou,2025-04-20T14:52:50-0400,POST,/profile,502,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://example.com,failed
+203.0.113.5,admin,root123,2025-04-20T14:52:50-0400,POST,/auth,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,success
+94.102.49.193,charlie,admin' #,2025-04-21T03:52:50+0900,POST,/usr/login,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://hacked.com/exploit,failed
+185.107.56.231,admin,""" onmouseover=""alert(1)""",2025-04-20T14:52:50-0400,GET,/register,401,curl/7.68.0,https://evil.com/redirect,failed
+218.92.0.228,isabella,letmein,2025-04-20T21:52:50+0300,GET,/settings,503,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://hacked.com/exploit,failed
+45.148.10.67,hacker,admin,2025-04-20T11:52:50-0700,PATCH,/usr/login,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://bot.com/spam,failed
+141.98.10.91,user,""" onmouseover=""alert(1)""",2025-04-20T19:52:50+0100,OPTIONS,/api/data,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://legit-site.org,success
+103.86.49.149,service_account,12345,2025-04-21T00:22:50+0530,GET,/auth,201,python-requests/2.25.1,https://unknown.tld/weird,success
+146.70.80.184,dev,'; DROP TABLE users; --,2025-04-20T14:52:50-0400,PATCH,/api/user,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://youtube.com,failed
+141.98.10.91,smith,iloveyou,2025-04-20T21:52:50+0300,PUT,/dashboard,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/phishing,failed
+218.92.0.219,user,""" onmouseover=""alert(1)""",2025-04-21T03:52:50+0900,PUT,/usr/login,503,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://hacked.com/exploit,failed
+103.207.38.34,testuser,admin' --,2025-04-21T03:52:50+0900,DELETE,/api/user,400,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),-,success
+37.123.163.58,adam,welcome,2025-04-20T19:52:50+0100,PATCH,/admin,301,PostmanRuntime/7.29.0,https://bot.com/spam,success
+185.220.101.23,charlie,letmein,2025-04-20T11:52:50-0700,DELETE,/settings,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,failed
+45.148.10.67,bob,admin' --,2025-04-21T03:52:50+0900,OPTIONS,/profile,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/redirect,success
+218.92.0.226,dev,123qwe,2025-04-20T14:52:50-0400,PATCH,/settings,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://google.com,failed
+218.92.0.236,manager,password123,2025-04-21T03:52:50+0900,HEAD,/api/user,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://hacked.com/exploit,failed
+111.90.147.183,janedoe,toor,2025-04-20T21:52:50+0300,OPTIONS,/api/user,301,curl/7.68.0,https://evil.com/redirect,success
+185.246.208.200,angela,' OR '1'='1,2025-04-20T19:52:50+0100,GET,/api/user,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,failed
+185.220.100.252,david,12345,2025-04-20T19:52:50+0100,PATCH,/auth,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,failed
+218.92.0.229,alex,x' OR 1=1 --,2025-04-20T18:52:50+0000,GET,/logout,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://hacked.com/exploit,success
+111.90.147.183,janedoe,pass@123,2025-04-21T00:22:50+0530,DELETE,/settings,500,python-requests/2.25.1,https://youtube.com,success
+45.134.20.55,admin,letmein,2025-04-21T04:52:50+1000,PUT,/dashboard,401,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,failed
+185.220.101.23,angela,qwerty,2025-04-20T18:52:50+0000,DELETE,/admin,500,curl/7.68.0,https://evil.com/phishing,failed
+218.92.0.225,testuser,1234abcd,2025-04-21T06:52:50+1200,PATCH,/register,401,python-requests/2.25.1,https://facebook.com,failed
+45.227.253.82,james,letmein,2025-04-20T20:52:50+0200,DELETE,/settings,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://unknown.tld/weird,failed
+45.66.11.10,root,12345,2025-04-21T06:52:50+1200,OPTIONS,/admin,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/redirect,failed
+185.246.208.200,donald,admin' #,2025-04-21T03:52:50+0900,GET,/auth,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/redirect,failed
+185.38.175.132,guest1,admin' #,2025-04-20T18:52:50+0000,PUT,/dashboard,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://google.com,success
+45.134.20.55,donald,qwerty,2025-04-21T04:52:50+1000,DELETE,/usr/login,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,failed
+45.227.253.82,donald,admin' #,2025-04-21T00:22:50+0530,PUT,/dashboard,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://facebook.com,success
+218.92.0.218,service_account,qwerty,2025-04-21T06:52:50+1200,HEAD,/settings,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://youtube.com,failed
+10.0.0.2,guest1,' OR 1=1#,2025-04-20T19:52:50+0100,DELETE,/usr/login,401,curl/7.68.0,https://evil.com/phishing,success
+218.92.0.236,manager,toor,2025-04-20T19:52:50+0100,DELETE,/admin,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,success
+198.98.54.17,hilary,' OR 1=1#,2025-04-20T19:52:50+0100,POST,/api/user,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://facebook.com,success
+10.0.0.2,janedoe,iloveyou,2025-04-21T03:52:50+0900,PATCH,/api/data,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://example.com,failed
+103.55.38.6,hilary,' OR '1'='1,2025-04-21T00:22:50+0530,PUT,/usr/login,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,failed
+146.70.80.184,adam,welcome,2025-04-20T22:52:50+0400,HEAD,/usr/login,500,PostmanRuntime/7.29.0,https://unknown.tld/weird,failed
+218.92.0.103,john_doe,root' OR '1'='1,2025-04-21T00:22:50+0530,OPTIONS,/logout,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://youtube.com,success
+192.168.1.1,test,12345,2025-04-20T21:52:50+0300,DELETE,/settings,400,PostmanRuntime/7.29.0,https://google.com,success
+194.147.142.0,adam,admin' --,2025-04-21T04:52:50+1000,OPTIONS,/usr/login,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://example.com,failed
+218.92.0.216,charlie,123qwe,2025-04-20T18:52:50+0000,PUT,/auth,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,failed
+218.92.0.231,bob,' OR '1'='1,2025-04-20T18:52:50+0000,DELETE,/logout,500,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://legit-site.org,success
+185.220.100.252,johnsmith,12345,2025-04-20T19:52:50+0100,DELETE,/register,201,curl/7.68.0,https://example.com,success
+209.141.38.71,user,root123,2025-04-21T03:52:50+0900,DELETE,/register,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,success
+203.0.113.5,guest,12345,2025-04-21T06:52:50+1200,OPTIONS,/admin,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://google.com,failed
+185.246.208.200,alice,x' OR 1=1 --,2025-04-21T03:52:50+0900,DELETE,/dashboard,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,failed
+146.70.80.184,smith,welcome,2025-04-20T11:52:50-0700,OPTIONS,/login,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,success
+218.92.0.217,james,passw0rd,2025-04-20T20:52:50+0200,PATCH,/logout,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://unknown.tld/weird,failed
+218.92.0.225,guest,password123,2025-04-20T20:52:50+0200,DELETE,/usr/login,201,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,failed
+103.86.49.149,alice,admin,2025-04-20T21:52:50+0300,POST,/api/user,301,curl/7.68.0,https://facebook.com,failed
+103.55.38.6,testuser,12345,2025-04-21T06:52:50+1200,OPTIONS,/auth,401,curl/7.68.0,https://google.com,success
+209.141.38.71,guest1,123qwe,2025-04-20T18:52:50+0000,OPTIONS,/auth,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://attack.com/malicious,failed
+218.92.0.225,donald,welcome,2025-04-21T06:52:50+1200,OPTIONS,/login,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,success
+203.190.54.1,dbadmin,root123,2025-04-20T20:52:50+0200,PATCH,/auth,301,PostmanRuntime/7.29.0,https://youtube.com,success
+218.92.0.228,admin,root123,2025-04-21T00:22:50+0530,OPTIONS,/register,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,failed
+192.168.1.1,eve,<script>alert(1)</script>,2025-04-20T18:52:50+0000,DELETE,/settings,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://someother.com,success
+45.83.64.1,eve,root' OR '1'='1,2025-04-20T20:52:50+0200,DELETE,/logout,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,failed
+45.83.64.1,charlie,1234abcd,2025-04-20T11:52:50-0700,GET,/api/user,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://example.com,success
+218.92.0.223,dbadmin,letmein123,2025-04-21T03:52:50+0900,HEAD,/api/data,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://legit-site.org,failed
+45.227.253.82,james,password,2025-04-21T06:52:50+1200,GET,/login,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",-,failed
+218.92.0.218,test,<script>alert('xss')</script>,2025-04-21T03:52:50+0900,PATCH,/login,502,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,success
+192.168.1.1,service,<script>alert(1)</script>,2025-04-20T11:52:50-0700,POST,/admin,503,python-requests/2.25.1,https://facebook.com,failed
+218.92.0.225,smith,toor,2025-04-20T20:52:50+0200,GET,/admin,502,python-requests/2.25.1,https://facebook.com,failed
+103.152.220.10,isabella,<script>alert(1)</script>,2025-04-20T19:52:50+0100,HEAD,/admin,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://someother.com,success
+141.98.10.91,test,welcome,2025-04-20T14:52:50-0400,PATCH,/register,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://unknown.tld/weird,failed
+218.92.0.225,alice,' OR 1=1#,2025-04-20T22:52:50+0400,POST,/register,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,success
+185.38.175.132,johnsmith,passw0rd,2025-04-20T22:52:50+0400,GET,/dashboard,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://legit-site.org,success
+94.102.49.193,test,12345,2025-04-20T22:52:50+0400,GET,/auth,502,python-requests/2.25.1,https://attack.com/malicious,success
+218.92.0.226,james,toor,2025-04-20T19:52:50+0100,HEAD,/login,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",-,success
+185.100.87.202,guest,password1,2025-04-20T20:52:50+0200,DELETE,/api/user,403,PostmanRuntime/7.29.0,https://evil.com/phishing,failed
+89.234.157.254,donald,letmein123,2025-04-21T00:22:50+0530,GET,/auth,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,failed
+198.98.54.17,service_account,passw0rd,2025-04-20T20:52:50+0200,GET,/admin,404,PostmanRuntime/7.29.0,-,success
+193.32.126.210,service,""" onmouseover=""alert(1)""",2025-04-20T11:52:50-0700,POST,/auth,404,curl/7.68.0,https://secured.com,failed
+109.248.148.55,guest,admin' --,2025-04-21T00:22:50+0530,HEAD,/api/user,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://legit-site.org,success
+203.190.54.1,admin,123qwe,2025-04-20T21:52:50+0300,POST,/auth,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://someother.com,failed
+185.142.236.35,dbadmin,toor,2025-04-21T04:52:50+1000,GET,/usr/login,500,Mozilla/5.0 (Windows NT 10.0; Win64; x64),-,success
+10.0.0.2,hilary,' OR 1=1#,2025-04-21T04:52:50+1000,POST,/login,200,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,failed
+10.0.0.2,isabella,123qwe,2025-04-20T20:52:50+0200,DELETE,/logout,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",-,failed
+45.134.20.55,bob,root123,2025-04-20T22:52:50+0400,OPTIONS,/auth,400,PostmanRuntime/7.29.0,https://example.com,failed
+185.142.236.35,service_account,1234abcd,2025-04-20T20:52:50+0200,GET,/api/user,200,PostmanRuntime/7.29.0,-,failed
+218.92.0.216,hilary,123456,2025-04-21T04:52:50+1000,HEAD,/logout,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,success
+198.98.54.17,admin,qwerty,2025-04-20T22:52:50+0400,PUT,/settings,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/redirect,failed
+103.75.201.2,guest,123qwe,2025-04-21T04:52:50+1000,PUT,/api/data,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://youtube.com,success
+103.86.49.149,johnsmith,' OR '1'='1,2025-04-20T22:52:50+0400,HEAD,/usr/login,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://youtube.com,success
+192.42.116.16,webmaster,letmein,2025-04-21T03:52:50+0900,GET,/login,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://legit-site.org,success
+218.92.0.226,service_account,admin,2025-04-20T14:52:50-0400,PATCH,/logout,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://facebook.com,failed
+45.66.11.10,bob,1234abcd,2025-04-20T14:52:50-0400,PUT,/login,502,python-requests/2.25.1,https://evil.com/redirect,success
+185.129.62.62,service_account,root' OR '1'='1,2025-04-21T04:52:50+1000,OPTIONS,/login,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,failed
+218.92.0.231,alex,qwerty,2025-04-21T06:52:50+1200,GET,/api/user,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",-,failed
+10.0.0.2,test,admin,2025-04-20T20:52:50+0200,GET,/register,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,success
+192.42.116.16,donald,qwerty,2025-04-21T06:52:50+1200,PATCH,/settings,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://someother.com,success
+218.92.0.223,adam,""" onmouseover=""alert(1)""",2025-04-21T04:52:50+1000,DELETE,/register,502,python-requests/2.25.1,https://youtube.com,failed
+109.248.148.55,angela,root123,2025-04-20T18:52:50+0000,HEAD,/profile,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,success
+185.129.62.62,smith,root,2025-04-21T04:52:50+1000,DELETE,/logout,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,success
+172.16.0.3,hilary,letmein,2025-04-20T18:52:50+0000,OPTIONS,/api/user,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/redirect,success
+192.42.116.16,webmaster,12345,2025-04-21T00:22:50+0530,HEAD,/auth,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,success
+109.248.148.55,manager,123456,2025-04-21T03:52:50+0900,POST,/api/data,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://hacked.com/exploit,success
+89.234.157.254,alex,iloveyou,2025-04-20T19:52:50+0100,PUT,/admin,200,curl/7.68.0,https://evil.com/phishing,failed
+141.98.10.91,hilary,1234abcd,2025-04-21T03:52:50+0900,POST,/register,401,PostmanRuntime/7.29.0,-,success
+218.92.0.236,eve,admin' --,2025-04-20T20:52:50+0200,PUT,/dashboard,500,PostmanRuntime/7.29.0,-,success
+218.92.0.233,user,root,2025-04-21T00:22:50+0530,GET,/logout,503,curl/7.68.0,https://secured.com,failed
+146.70.80.184,guest,' OR 1=1#,2025-04-20T18:52:50+0000,OPTIONS,/api/data,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/phishing,failed
+198.98.54.17,isabella,' OR 1=1#,2025-04-20T14:52:50-0400,PUT,/api/data,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://bot.com/spam,failed
+111.90.147.183,adam,x' OR 1=1 --,2025-04-21T06:52:50+1200,PATCH,/api/data,503,python-requests/2.25.1,https://google.com,failed
+192.42.116.16,admin,' OR '1'='1,2025-04-20T14:52:50-0400,DELETE,/dashboard,400,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://google.com,success
+218.92.0.233,david,""" onmouseover=""alert(1)""",2025-04-21T06:52:50+1200,HEAD,/profile,502,python-requests/2.25.1,https://evil.com/redirect,failed
+185.142.236.35,james,qwerty,2025-04-21T03:52:50+0900,HEAD,/profile,503,python-requests/2.25.1,https://facebook.com,failed
+218.92.0.233,user,123456,2025-04-21T06:52:50+1200,PUT,/admin,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,failed
+198.98.54.17,admin,<script>alert('xss')</script>,2025-04-20T20:52:50+0200,POST,/auth,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://secured.com,success
+146.70.80.184,dev,root' OR '1'='1,2025-04-21T04:52:50+1000,PUT,/dashboard,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://legit-site.org,success
+185.107.56.231,alex,' OR 1=1#,2025-04-20T20:52:50+0200,PUT,/settings,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,success
+194.147.142.0,adam,passw0rd,2025-04-20T20:52:50+0200,PUT,/register,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://unknown.tld/weird,failed
+218.92.0.231,smith,'; DROP TABLE users; --,2025-04-20T14:52:50-0400,GET,/admin,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://youtube.com,failed
+218.92.0.218,angela,root' OR '1'='1,2025-04-20T11:52:50-0700,GET,/dashboard,500,curl/7.68.0,https://attack.com/malicious,success
+218.92.0.103,dev,password,2025-04-21T04:52:50+1000,OPTIONS,/profile,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://google.com,success
+45.134.20.55,guest,password,2025-04-21T00:22:50+0530,HEAD,/login,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://legit-site.org,success
+185.100.87.202,manager,welcome,2025-04-20T19:52:50+0100,PATCH,/dashboard,403,python-requests/2.25.1,https://example.com,failed
+218.92.0.111,testuser,""" onmouseover=""alert(1)""",2025-04-21T06:52:50+1200,HEAD,/usr/login,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://secured.com,success
+218.92.0.217,isabella,root,2025-04-20T20:52:50+0200,HEAD,/profile,401,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,success
+45.134.20.55,smith,""" onmouseover=""alert(1)""",2025-04-20T14:52:50-0400,PATCH,/profile,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://youtube.com,failed
+218.92.0.233,adam,<script>alert(1)</script>,2025-04-20T14:52:50-0400,GET,/register,301,curl/7.68.0,https://attack.com/malicious,failed
+185.220.100.252,charlie,' OR 1=1#,2025-04-20T14:52:50-0400,GET,/profile,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,success
+45.134.20.55,james,letmein123,2025-04-20T20:52:50+0200,GET,/profile,502,curl/7.68.0,-,failed
+109.248.148.55,guest,password1,2025-04-20T19:52:50+0100,DELETE,/register,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://example.com,failed
+194.147.142.0,donald,123456,2025-04-21T06:52:50+1200,POST,/profile,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/phishing,success
+45.134.20.55,webmaster,qwerty,2025-04-20T21:52:50+0300,OPTIONS,/register,403,PostmanRuntime/7.29.0,https://someother.com,success
+45.148.10.67,alex,12345,2025-04-20T14:52:50-0400,HEAD,/dashboard,502,curl/7.68.0,https://google.com,success
+203.190.54.1,user,admin' --,2025-04-20T19:52:50+0100,PATCH,/api/user,200,curl/7.68.0,https://google.com,failed
+203.0.113.5,guest1,1234abcd,2025-04-20T21:52:50+0300,GET,/settings,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",-,failed
+218.92.0.220,service_account,<script>alert(1)</script>,2025-04-21T03:52:50+0900,GET,/profile,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,success
+218.92.0.226,donald,qwerty,2025-04-21T03:52:50+0900,GET,/usr/login,400,curl/7.68.0,https://legit-site.org,failed
+194.147.142.0,janedoe,root' OR '1'='1,2025-04-20T11:52:50-0700,DELETE,/register,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://example.com,success
+209.141.38.71,alice,letmein,2025-04-21T06:52:50+1200,GET,/api/data,400,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,success
+103.152.220.10,guest,toor,2025-04-20T22:52:50+0400,GET,/api/data,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/redirect,success
+45.66.11.10,testuser,letmein,2025-04-21T06:52:50+1200,PUT,/auth,403,python-requests/2.25.1,https://hacked.com/exploit,success
+172.16.0.3,service_account,123456,2025-04-21T00:22:50+0530,DELETE,/login,404,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://unknown.tld/weird,success
+198.98.54.17,john_doe,' OR '1'='1,2025-04-21T06:52:50+1200,OPTIONS,/auth,403,PostmanRuntime/7.29.0,https://bot.com/spam,success
+203.190.54.1,guest,letmein123,2025-04-21T00:22:50+0530,PUT,/settings,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://hacked.com/exploit,failed
+185.142.236.35,test,admin' --,2025-04-21T00:22:50+0530,HEAD,/usr/login,200,PostmanRuntime/7.29.0,https://facebook.com,success
+103.15.28.5,service_account,root123,2025-04-20T20:52:50+0200,DELETE,/usr/login,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://someother.com,success
+193.32.126.210,john_doe,""" onmouseover=""alert(1)""",2025-04-21T06:52:50+1200,POST,/settings,502,python-requests/2.25.1,https://evil.com/phishing,success
+218.92.0.220,guest,letmein,2025-04-21T06:52:50+1200,HEAD,/login,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/phishing,success
+185.129.62.62,john_doe,x' OR 1=1 --,2025-04-21T00:22:50+0530,HEAD,/admin,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://google.com,success
+10.0.0.2,guest,123456,2025-04-20T14:52:50-0400,PUT,/logout,503,PostmanRuntime/7.29.0,-,failed
+185.220.101.23,alex,toor,2025-04-20T11:52:50-0700,OPTIONS,/usr/login,502,curl/7.68.0,https://someother.com,failed
+218.92.0.233,webmaster,123456,2025-04-20T20:52:50+0200,DELETE,/admin,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://unknown.tld/weird,success
+218.92.0.219,adam,root123,2025-04-20T14:52:50-0400,OPTIONS,/auth,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://hacked.com/exploit,success
+218.92.0.225,eve,password123,2025-04-21T06:52:50+1200,PATCH,/api/data,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://youtube.com,failed
+218.92.0.221,testuser,root,2025-04-20T14:52:50-0400,POST,/login,201,PostmanRuntime/7.29.0,https://facebook.com,success
+218.92.0.228,hilary,admin,2025-04-20T20:52:50+0200,OPTIONS,/usr/login,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/redirect,success
+45.83.64.1,donald,x' OR 1=1 --,2025-04-20T14:52:50-0400,DELETE,/admin,403,python-requests/2.25.1,-,failed
+141.98.10.91,james,toor,2025-04-21T03:52:50+0900,GET,/api/user,404,curl/7.68.0,https://google.com,success
+218.92.0.221,johnsmith,1234abcd,2025-04-20T19:52:50+0100,PATCH,/profile,404,curl/7.68.0,https://someother.com,success
+218.92.0.227,guest1,root,2025-04-20T22:52:50+0400,GET,/auth,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,success
+185.246.208.200,bob,passw0rd,2025-04-21T04:52:50+1000,HEAD,/admin,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://facebook.com,failed
+45.227.253.82,angela,welcome,2025-04-20T21:52:50+0300,HEAD,/dashboard,404,curl/7.68.0,https://unknown.tld/weird,failed
+218.92.0.225,service_account,pass@123,2025-04-20T11:52:50-0700,GET,/api/data,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",-,failed
+10.0.0.2,alice,<script>alert('xss')</script>,2025-04-20T14:52:50-0400,PATCH,/admin,500,curl/7.68.0,https://bot.com/spam,failed
+103.75.201.2,root,password1,2025-04-20T20:52:50+0200,GET,/api/data,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://google.com,success
+103.152.220.10,root,password123,2025-04-20T19:52:50+0100,OPTIONS,/api/data,400,curl/7.68.0,https://unknown.tld/weird,success
+37.123.163.58,bob,passw0rd,2025-04-20T14:52:50-0400,POST,/logout,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://bot.com/spam,success
+185.246.208.200,charlie,toor,2025-04-20T20:52:50+0200,HEAD,/usr/login,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://google.com,success
+45.134.20.55,isabella,passw0rd,2025-04-20T11:52:50-0700,PUT,/profile,502,curl/7.68.0,https://secured.com,failed
+146.70.80.184,bob,iloveyou,2025-04-20T11:52:50-0700,PUT,/auth,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,failed
+218.92.0.225,bob,""" onmouseover=""alert(1)""",2025-04-20T20:52:50+0200,PATCH,/dashboard,201,PostmanRuntime/7.29.0,https://secured.com,success
+103.55.38.6,smith,admin' #,2025-04-21T06:52:50+1200,HEAD,/dashboard,200,curl/7.68.0,https://evil.com/phishing,failed
+218.92.0.233,janedoe,letmein,2025-04-21T04:52:50+1000,PUT,/auth,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,success
+146.70.80.184,david,letmein,2025-04-20T11:52:50-0700,GET,/api/data,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,success
+218.92.0.111,webmaster,root123,2025-04-20T20:52:50+0200,HEAD,/profile,200,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,success
+218.92.0.233,eve,<script>alert(1)</script>,2025-04-20T22:52:50+0400,GET,/settings,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://youtube.com,success
+103.152.220.10,janedoe,letmein,2025-04-21T06:52:50+1200,HEAD,/login,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",-,success
+218.92.0.231,test,""" onmouseover=""alert(1)""",2025-04-20T14:52:50-0400,POST,/register,404,PostmanRuntime/7.29.0,https://evil.com/phishing,failed
+218.92.0.216,bob,passw0rd,2025-04-20T14:52:50-0400,POST,/profile,401,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,success
+218.92.0.103,smith,password1,2025-04-21T00:22:50+0530,GET,/logout,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),-,success
+218.92.0.216,service_account,root,2025-04-20T22:52:50+0400,HEAD,/settings,201,curl/7.68.0,https://attack.com/malicious,failed
+45.227.253.82,eve,'; DROP TABLE users; --,2025-04-21T00:22:50+0530,PATCH,/admin,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://attack.com/malicious,failed
+89.234.157.254,guest1,admin' --,2025-04-20T18:52:50+0000,GET,/auth,201,python-requests/2.25.1,https://evil.com/phishing,failed
+203.0.113.5,root,password1,2025-04-20T19:52:50+0100,GET,/usr/login,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,failed
+146.70.80.184,johnsmith,admin' #,2025-04-21T03:52:50+0900,OPTIONS,/settings,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://example.com,failed
+198.51.100.7,janedoe,admin' #,2025-04-20T11:52:50-0700,PATCH,/auth,502,python-requests/2.25.1,https://unknown.tld/weird,success
+185.38.175.132,alex,' OR 1=1#,2025-04-20T14:52:50-0400,DELETE,/login,502,PostmanRuntime/7.29.0,-,success
+218.92.0.220,root,passw0rd,2025-04-21T00:22:50+0530,PUT,/register,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",-,success
+103.55.38.6,hacker,toor,2025-04-21T04:52:50+1000,GET,/admin,404,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://bot.com/spam,failed
+192.168.1.1,eve,admin' --,2025-04-20T14:52:50-0400,OPTIONS,/api/user,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://google.com,failed
+194.147.142.0,angela,123456,2025-04-21T04:52:50+1000,PATCH,/usr/login,403,curl/7.68.0,https://someother.com,success
+111.90.147.183,root,letmein,2025-04-20T11:52:50-0700,HEAD,/logout,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://youtube.com,failed
+198.51.100.7,janedoe,admin' #,2025-04-20T21:52:50+0300,HEAD,/dashboard,502,PostmanRuntime/7.29.0,https://google.com,failed
+109.248.148.55,root,toor,2025-04-20T14:52:50-0400,POST,/dashboard,502,curl/7.68.0,https://youtube.com,failed
+185.246.208.200,janedoe,qwerty,2025-04-20T20:52:50+0200,GET,/api/data,500,PostmanRuntime/7.29.0,https://attack.com/malicious,failed
+185.220.100.252,manager,admin' #,2025-04-21T00:22:50+0530,POST,/profile,400,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://unknown.tld/weird,success
+218.92.0.223,eve,root123,2025-04-20T22:52:50+0400,PUT,/logout,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://evil.com/redirect,success
+218.92.0.218,hacker,' OR '1'='1,2025-04-20T19:52:50+0100,OPTIONS,/profile,403,curl/7.68.0,https://legit-site.org,failed
+218.92.0.221,guest1,admin,2025-04-21T03:52:50+0900,PATCH,/logout,301,curl/7.68.0,https://youtube.com,failed
+192.42.116.16,adam,pass@123,2025-04-20T18:52:50+0000,DELETE,/admin,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/redirect,failed
+192.168.1.1,root,welcome,2025-04-21T06:52:50+1200,HEAD,/settings,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://example.com,failed
+185.246.208.200,guest1,pass@123,2025-04-21T00:22:50+0530,PUT,/dashboard,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,success
+146.70.80.184,johnsmith,root,2025-04-20T20:52:50+0200,DELETE,/usr/login,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://attack.com/malicious,success
+218.92.0.103,root,'; DROP TABLE users; --,2025-04-21T03:52:50+0900,DELETE,/settings,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",-,failed
+192.168.1.1,root,admin' --,2025-04-21T06:52:50+1200,OPTIONS,/logout,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://hacked.com/exploit,success
+185.142.236.35,hacker,1234abcd,2025-04-21T03:52:50+0900,GET,/profile,404,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://facebook.com,success
+45.134.20.55,adam,1234abcd,2025-04-20T19:52:50+0100,DELETE,/dashboard,404,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://google.com,success
+209.141.38.71,guest,<script>alert(1)</script>,2025-04-20T11:52:50-0700,OPTIONS,/admin,500,curl/7.68.0,https://hacked.com/exploit,success
+193.218.118.110,james,password1,2025-04-20T20:52:50+0200,DELETE,/settings,401,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://example.com,failed
+192.168.1.1,webmaster,toor,2025-04-20T19:52:50+0100,HEAD,/profile,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://someother.com,success
+103.207.38.34,testuser,qwerty,2025-04-20T20:52:50+0200,PATCH,/dashboard,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/phishing,success
+45.134.20.55,dev,<script>alert(1)</script>,2025-04-20T20:52:50+0200,PUT,/login,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://secured.com,success
+185.220.101.23,root,' OR '1'='1,2025-04-20T20:52:50+0200,OPTIONS,/dashboard,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://legit-site.org,failed
+103.86.49.149,webmaster,root123,2025-04-20T21:52:50+0300,PATCH,/login,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,success
+134.209.120.69,webmaster,password123,2025-04-20T18:52:50+0000,DELETE,/usr/login,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://example.com,failed
+10.0.0.2,donald,password,2025-04-20T19:52:50+0100,HEAD,/login,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://example.com,success
+103.55.38.6,adam,passw0rd,2025-04-20T20:52:50+0200,GET,/dashboard,401,PostmanRuntime/7.29.0,https://legit-site.org,failed
+103.86.49.149,dbadmin,'; DROP TABLE users; --,2025-04-21T03:52:50+0900,GET,/usr/login,502,python-requests/2.25.1,https://evil.com/phishing,success
+37.123.163.58,james,password123,2025-04-20T14:52:50-0400,PUT,/profile,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://legit-site.org,failed
+218.92.0.220,david,password,2025-04-21T03:52:50+0900,PUT,/logout,403,PostmanRuntime/7.29.0,https://example.com,failed
+218.92.0.226,adam,password123,2025-04-20T14:52:50-0400,DELETE,/dashboard,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://attack.com/malicious,success
+203.0.113.5,isabella,' OR '1'='1,2025-04-20T14:52:50-0400,GET,/dashboard,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://bot.com/spam,success
+185.220.101.23,dbadmin,admin,2025-04-20T14:52:50-0400,PUT,/auth,403,curl/7.68.0,https://secured.com,failed
+198.98.54.17,guest,passw0rd,2025-04-20T22:52:50+0400,DELETE,/usr/login,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://youtube.com,success
+218.92.0.233,testuser,admin' --,2025-04-20T20:52:50+0200,DELETE,/usr/login,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,failed
+198.51.100.7,guest,""" onmouseover=""alert(1)""",2025-04-20T14:52:50-0400,OPTIONS,/settings,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,failed
+109.248.148.55,root,123qwe,2025-04-20T19:52:50+0100,HEAD,/logout,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,success
+218.92.0.229,dbadmin,admin' --,2025-04-20T19:52:50+0100,PATCH,/logout,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),-,failed
+94.102.49.193,charlie,admin,2025-04-21T06:52:50+1200,OPTIONS,/register,201,python-requests/2.25.1,https://google.com,failed
+218.92.0.217,angela,root123,2025-04-21T04:52:50+1000,OPTIONS,/api/user,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://unknown.tld/weird,failed
+45.66.11.10,manager,' OR '1'='1,2025-04-20T18:52:50+0000,GET,/usr/login,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),-,success
+172.16.0.3,hacker,' OR '1'='1,2025-04-20T21:52:50+0300,GET,/logout,201,Mozilla/5.0 (Windows NT 10.0; Win64; x64),-,success
+141.98.10.91,john_doe,root' OR '1'='1,2025-04-20T19:52:50+0100,DELETE,/dashboard,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,failed
+134.209.120.69,webmaster,12345,2025-04-20T14:52:50-0400,POST,/register,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",-,failed
+45.83.64.1,service_account,qwerty,2025-04-21T06:52:50+1200,PUT,/api/user,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,success
+218.92.0.103,eve,letmein,2025-04-20T22:52:50+0400,PUT,/admin,403,python-requests/2.25.1,https://youtube.com,success
+218.92.0.220,angela,admin' --,2025-04-21T03:52:50+0900,POST,/api/data,503,PostmanRuntime/7.29.0,https://someother.com,success
+45.134.20.55,adam,welcome,2025-04-20T22:52:50+0400,PATCH,/register,403,curl/7.68.0,https://example.com,success
+218.92.0.236,test,passw0rd,2025-04-20T21:52:50+0300,DELETE,/register,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/redirect,failed
+218.92.0.221,donald,""" onmouseover=""alert(1)""",2025-04-21T04:52:50+1000,PUT,/login,500,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,failed
+45.66.11.10,webmaster,root123,2025-04-20T18:52:50+0000,PUT,/admin,201,python-requests/2.25.1,https://evil.com/redirect,success
+218.92.0.225,service_account,admin' --,2025-04-20T20:52:50+0200,PUT,/logout,404,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://someother.com,success
+218.92.0.216,isabella,letmein123,2025-04-21T04:52:50+1000,GET,/admin,502,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,success
+172.16.0.3,webmaster,toor,2025-04-20T21:52:50+0300,PATCH,/login,201,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://someother.com,failed
+192.42.116.16,james,letmein,2025-04-20T22:52:50+0400,PATCH,/api/data,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://hacked.com/exploit,failed
+109.248.148.55,isabella,root' OR '1'='1,2025-04-20T19:52:50+0100,PUT,/api/user,502,PostmanRuntime/7.29.0,https://unknown.tld/weird,success
+103.207.38.34,adam,qwerty,2025-04-20T11:52:50-0700,PATCH,/dashboard,503,PostmanRuntime/7.29.0,https://youtube.com,success
+141.98.10.91,service_account,123qwe,2025-04-20T11:52:50-0700,GET,/usr/login,500,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://legit-site.org,success
+45.227.253.82,root,password1,2025-04-20T19:52:50+0100,OPTIONS,/admin,404,PostmanRuntime/7.29.0,https://bot.com/spam,failed
+103.75.201.2,guest,pass@123,2025-04-20T19:52:50+0100,GET,/admin,400,curl/7.68.0,https://someother.com,failed
+111.90.147.183,dev,root,2025-04-20T21:52:50+0300,DELETE,/auth,201,PostmanRuntime/7.29.0,-,failed
+45.83.64.1,dbadmin,root' OR '1'='1,2025-04-20T20:52:50+0200,PATCH,/api/user,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://attack.com/malicious,success
+94.102.49.193,guest,password1,2025-04-20T14:52:50-0400,PATCH,/admin,201,curl/7.68.0,https://attack.com/malicious,failed
+10.0.0.2,root,welcome,2025-04-20T18:52:50+0000,PATCH,/api/data,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/phishing,success
+111.90.147.183,james,qwerty,2025-04-21T06:52:50+1200,OPTIONS,/profile,301,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://unknown.tld/weird,failed
+203.190.54.1,dev,password123,2025-04-21T06:52:50+1200,OPTIONS,/logout,502,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://youtube.com,success
+45.66.11.10,guest,admin' --,2025-04-21T06:52:50+1200,GET,/admin,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://legit-site.org,failed
+103.55.38.6,user,admin' --,2025-04-20T21:52:50+0300,DELETE,/login,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://example.com,success
+146.70.80.184,james,password123,2025-04-20T11:52:50-0700,DELETE,/usr/login,500,curl/7.68.0,https://facebook.com,failed
+218.92.0.103,service,'; DROP TABLE users; --,2025-04-20T20:52:50+0200,GET,/auth,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://legit-site.org,success
+45.66.11.10,test,'; DROP TABLE users; --,2025-04-21T04:52:50+1000,DELETE,/logout,404,python-requests/2.25.1,-,failed
+45.227.253.82,admin,root123,2025-04-21T00:22:50+0530,OPTIONS,/register,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://google.com,failed
+185.220.100.252,admin,passw0rd,2025-04-21T06:52:50+1200,GET,/register,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://secured.com,success
+94.102.49.193,angela,passw0rd,2025-04-21T03:52:50+0900,PUT,/login,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,failed
+89.234.157.254,james,root,2025-04-20T22:52:50+0400,DELETE,/login,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/phishing,success
+218.92.0.111,bob,admin' --,2025-04-21T00:22:50+0530,GET,/profile,201,python-requests/2.25.1,https://unknown.tld/weird,failed
+89.234.157.254,hilary,qwerty,2025-04-20T22:52:50+0400,GET,/profile,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://google.com,failed
+103.207.38.34,donald,123qwe,2025-04-21T00:22:50+0530,PATCH,/login,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://facebook.com,success
+103.152.220.10,isabella,welcome,2025-04-20T18:52:50+0000,GET,/admin,403,curl/7.68.0,https://bot.com/spam,success
+198.98.54.17,webmaster,12345,2025-04-20T20:52:50+0200,POST,/api/data,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://example.com,failed
+193.32.126.210,dev,12345,2025-04-20T14:52:50-0400,DELETE,/api/user,201,curl/7.68.0,https://example.com,failed
+89.234.157.254,manager,pass@123,2025-04-20T22:52:50+0400,PATCH,/settings,201,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,success
+218.92.0.216,dev,password123,2025-04-20T18:52:50+0000,POST,/admin,200,PostmanRuntime/7.29.0,https://facebook.com,success
+218.92.0.103,johnsmith,password123,2025-04-21T00:22:50+0530,OPTIONS,/settings,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://legit-site.org,success
+89.234.157.254,donald,root' OR '1'='1,2025-04-21T03:52:50+0900,DELETE,/auth,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,failed
+194.147.142.0,testuser,passw0rd,2025-04-20T18:52:50+0000,POST,/admin,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://example.com,failed
+172.16.0.3,alice,password1,2025-04-20T22:52:50+0400,OPTIONS,/login,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://secured.com,failed
+45.134.20.55,alice,iloveyou,2025-04-20T11:52:50-0700,GET,/admin,301,python-requests/2.25.1,https://hacked.com/exploit,failed
+218.92.0.229,angela,welcome,2025-04-20T20:52:50+0200,HEAD,/api/user,400,curl/7.68.0,https://google.com,failed
+45.148.10.67,testuser,12345,2025-04-21T06:52:50+1200,HEAD,/profile,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,failed
+218.92.0.103,manager,qwerty,2025-04-20T14:52:50-0400,POST,/api/user,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://facebook.com,success
+45.66.11.10,user,password123,2025-04-21T03:52:50+0900,PATCH,/api/user,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://someother.com,failed
+185.246.208.200,alice,1234abcd,2025-04-20T20:52:50+0200,HEAD,/logout,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/phishing,failed
+185.142.236.35,johnsmith,123456,2025-04-20T14:52:50-0400,HEAD,/logout,503,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://legit-site.org,failed
+218.92.0.236,janedoe,password,2025-04-20T22:52:50+0400,DELETE,/dashboard,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://legit-site.org,failed
+103.86.49.149,eve,letmein123,2025-04-20T19:52:50+0100,POST,/login,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",-,success
+218.92.0.221,webmaster,<script>alert(1)</script>,2025-04-20T14:52:50-0400,DELETE,/settings,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://someother.com,success
+218.92.0.216,alice,iloveyou,2025-04-20T19:52:50+0100,PUT,/register,404,python-requests/2.25.1,https://evil.com/redirect,success
+103.152.220.10,hilary,password,2025-04-20T20:52:50+0200,PATCH,/admin,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://unknown.tld/weird,success
+89.234.157.254,john_doe,123qwe,2025-04-21T04:52:50+1000,POST,/profile,301,python-requests/2.25.1,https://evil.com/phishing,failed
+218.92.0.111,donald,admin,2025-04-21T06:52:50+1200,PUT,/profile,500,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://secured.com,success
+192.168.1.1,johnsmith,123456,2025-04-21T00:22:50+0530,DELETE,/settings,401,PostmanRuntime/7.29.0,https://secured.com,success
+218.92.0.103,dbadmin,admin' --,2025-04-21T04:52:50+1000,PATCH,/profile,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://bot.com/spam,failed
+141.98.10.91,user,""" onmouseover=""alert(1)""",2025-04-20T11:52:50-0700,OPTIONS,/usr/login,401,curl/7.68.0,https://legit-site.org,success
+193.218.118.110,eve,123456,2025-04-21T04:52:50+1000,PUT,/settings,401,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://bot.com/spam,success
+172.16.0.3,bob,123456,2025-04-20T22:52:50+0400,PUT,/api/data,404,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://attack.com/malicious,failed
+185.38.175.132,test,admin,2025-04-20T14:52:50-0400,OPTIONS,/dashboard,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://google.com,failed
+185.142.236.35,angela,admin' --,2025-04-20T18:52:50+0000,PATCH,/admin,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://google.com,failed
+218.92.0.233,donald,admin' --,2025-04-20T19:52:50+0100,PUT,/profile,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",-,success
+218.92.0.111,dbadmin,passw0rd,2025-04-21T00:22:50+0530,HEAD,/profile,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://bot.com/spam,success
+89.234.157.254,adam,1234abcd,2025-04-20T22:52:50+0400,DELETE,/api/data,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/phishing,success
+89.234.157.254,manager,root123,2025-04-20T19:52:50+0100,DELETE,/profile,502,PostmanRuntime/7.29.0,https://evil.com/phishing,success
+218.92.0.230,admin,letmein123,2025-04-21T04:52:50+1000,OPTIONS,/usr/login,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,success
+218.92.0.220,smith,passw0rd,2025-04-20T20:52:50+0200,PUT,/login,502,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,success
+194.147.142.0,smith,' OR '1'='1,2025-04-20T20:52:50+0200,PATCH,/settings,201,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://unknown.tld/weird,failed
+134.209.120.69,root,123456,2025-04-20T11:52:50-0700,OPTIONS,/settings,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://legit-site.org,failed
+218.92.0.111,david,""" onmouseover=""alert(1)""",2025-04-21T06:52:50+1200,GET,/dashboard,200,curl/7.68.0,https://example.com,failed
+218.92.0.218,service,toor,2025-04-20T14:52:50-0400,DELETE,/auth,201,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://unknown.tld/weird,success
+218.92.0.223,alex,pass@123,2025-04-21T03:52:50+0900,DELETE,/dashboard,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://evil.com/phishing,failed
+45.83.64.1,hacker,root' OR '1'='1,2025-04-21T06:52:50+1200,PUT,/dashboard,301,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://example.com,failed
+185.38.175.132,isabella,pass@123,2025-04-20T20:52:50+0200,GET,/logout,401,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://unknown.tld/weird,success
+193.218.118.110,service_account,iloveyou,2025-04-20T19:52:50+0100,POST,/profile,200,curl/7.68.0,https://legit-site.org,success
+218.92.0.223,hilary,root123,2025-04-20T20:52:50+0200,PUT,/logout,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,failed
+218.92.0.229,guest,root123,2025-04-20T21:52:50+0300,PATCH,/profile,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://someother.com,success
+103.152.220.10,admin,root' OR '1'='1,2025-04-21T00:22:50+0530,POST,/api/data,401,python-requests/2.25.1,https://youtube.com,failed
+146.70.80.184,adam,'; DROP TABLE users; --,2025-04-21T04:52:50+1000,OPTIONS,/settings,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://facebook.com,success
+103.152.220.10,dbadmin,toor,2025-04-21T00:22:50+0530,PUT,/profile,503,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,success
+45.148.10.67,guest1,admin' --,2025-04-20T20:52:50+0200,POST,/register,403,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://example.com,success
+185.129.62.62,dbadmin,password1,2025-04-21T00:22:50+0530,HEAD,/api/data,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://legit-site.org,success
+134.209.120.69,alex,toor,2025-04-20T21:52:50+0300,POST,/api/data,201,curl/7.68.0,https://google.com,success
+185.38.175.132,isabella,admin' --,2025-04-21T00:22:50+0530,PATCH,/admin,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://legit-site.org,failed
+109.248.148.55,dev,root,2025-04-21T06:52:50+1200,HEAD,/register,401,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://hacked.com/exploit,failed
+198.98.54.17,manager,1234abcd,2025-04-20T22:52:50+0400,HEAD,/profile,500,python-requests/2.25.1,https://legit-site.org,failed
+89.234.157.254,dbadmin,1234abcd,2025-04-20T22:52:50+0400,HEAD,/dashboard,200,curl/7.68.0,https://evil.com/phishing,success
+209.141.38.71,root,' OR 1=1#,2025-04-20T20:52:50+0200,GET,/login,404,python-requests/2.25.1,https://hacked.com/exploit,success
+103.75.201.2,root,qwerty,2025-04-20T21:52:50+0300,POST,/auth,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://bot.com/spam,failed
+198.51.100.7,admin,admin,2025-04-20T22:52:50+0400,DELETE,/usr/login,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://hacked.com/exploit,success
+37.123.163.58,root,123456,2025-04-20T20:52:50+0200,PUT,/api/data,200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,success
+103.15.28.5,guest1,root123,2025-04-20T21:52:50+0300,GET,/login,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://bot.com/spam,failed
+185.38.175.132,root,root' OR '1'='1,2025-04-20T22:52:50+0400,HEAD,/profile,401,curl/7.68.0,https://evil.com/redirect,success
+103.15.28.5,test,passw0rd,2025-04-20T22:52:50+0400,DELETE,/dashboard,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://hacked.com/exploit,failed
+203.190.54.1,manager,letmein,2025-04-21T03:52:50+0900,PATCH,/logout,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://google.com,failed
+103.15.28.5,isabella,""" onmouseover=""alert(1)""",2025-04-20T22:52:50+0400,POST,/auth,503,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://facebook.com,success
+10.0.0.2,user,passw0rd,2025-04-21T06:52:50+1200,DELETE,/login,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://secured.com,success
+218.92.0.233,hacker,letmein123,2025-04-21T00:22:50+0530,DELETE,/usr/login,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://secured.com,success
+45.66.11.10,admin,root,2025-04-20T18:52:50+0000,HEAD,/api/user,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,failed
+192.168.1.1,dev,root123,2025-04-20T18:52:50+0000,GET,/register,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",-,success
+218.92.0.227,root,admin' --,2025-04-21T03:52:50+0900,OPTIONS,/api/user,500,PostmanRuntime/7.29.0,https://youtube.com,failed
+194.147.142.0,adam,letmein123,2025-04-21T04:52:50+1000,DELETE,/api/data,200,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,success
+185.100.87.202,eve,admin,2025-04-21T06:52:50+1200,POST,/usr/login,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://secured.com,failed
+10.0.0.2,admin,admin' --,2025-04-20T20:52:50+0200,PUT,/admin,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://facebook.com,failed
+134.209.120.69,admin,admin' #,2025-04-20T14:52:50-0400,PUT,/auth,403,Mozilla/5.0 (Windows NT 10.0; Win64; x64),-,success
+198.98.54.17,donald,<script>alert(1)</script>,2025-04-20T14:52:50-0400,DELETE,/auth,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://google.com,success
+10.0.0.2,webmaster,12345,2025-04-21T06:52:50+1200,GET,/profile,401,PostmanRuntime/7.29.0,https://youtube.com,failed
+185.246.208.200,root,' OR '1'='1,2025-04-20T14:52:50-0400,PUT,/usr/login,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://facebook.com,failed
+94.102.49.193,isabella,password1,2025-04-20T20:52:50+0200,PUT,/api/user,201,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://secured.com,success
+185.129.62.62,charlie,admin' --,2025-04-21T03:52:50+0900,PATCH,/profile,502,python-requests/2.25.1,https://unknown.tld/weird,success
+218.92.0.225,admin,1234abcd,2025-04-20T21:52:50+0300,HEAD,/logout,503,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://bot.com/spam,success
+45.66.11.10,testuser,toor,2025-04-21T06:52:50+1200,PATCH,/settings,301,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",-,failed
+37.123.163.58,test,admin,2025-04-20T20:52:50+0200,DELETE,/api/user,404,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://someother.com,success
+218.92.0.216,manager,admin' --,2025-04-21T00:22:50+0530,PATCH,/auth,403,curl/7.68.0,https://google.com,failed
+218.92.0.233,alice,toor,2025-04-20T20:52:50+0200,GET,/api/data,201,python-requests/2.25.1,https://secured.com,success
+209.141.38.71,adam,password1,2025-04-20T18:52:50+0000,OPTIONS,/register,403,python-requests/2.25.1,https://legit-site.org,success
+218.92.0.111,webmaster,' OR '1'='1,2025-04-20T22:52:50+0400,PATCH,/api/data,404,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://hacked.com/exploit,success
+218.92.0.233,john_doe,x' OR 1=1 --,2025-04-20T20:52:50+0200,POST,/profile,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://bot.com/spam,success
+203.0.113.5,webmaster,<script>alert(1)</script>,2025-04-21T03:52:50+0900,PATCH,/profile,500,curl/7.68.0,https://evil.com/redirect,failed
+203.0.113.5,james,' OR 1=1#,2025-04-20T19:52:50+0100,DELETE,/api/user,400,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://youtube.com,failed
+45.134.20.55,root,12345,2025-04-20T22:52:50+0400,GET,/settings,200,curl/7.68.0,https://bot.com/spam,success
+192.168.1.1,guest1,letmein123,2025-04-20T18:52:50+0000,HEAD,/auth,404,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/phishing,success
+45.148.10.67,david,admin' --,2025-04-21T06:52:50+1200,PATCH,/settings,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://legit-site.org,success
+198.51.100.7,bob,pass@123,2025-04-20T21:52:50+0300,HEAD,/profile,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://evil.com/phishing,success
+89.234.157.254,testuser,<script>alert(1)</script>,2025-04-20T20:52:50+0200,HEAD,/api/user,201,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://unknown.tld/weird,success
+218.92.0.219,hilary,1234abcd,2025-04-20T20:52:50+0200,OPTIONS,/logout,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://secured.com,success
+185.220.100.252,charlie,123456,2025-04-20T18:52:50+0000,PUT,/register,500,PostmanRuntime/7.29.0,https://legit-site.org,success
+111.90.147.183,john_doe,iloveyou,2025-04-21T06:52:50+1200,HEAD,/logout,400,PostmanRuntime/7.29.0,https://secured.com,success
+45.66.11.10,angela,' OR 1=1#,2025-04-20T19:52:50+0100,POST,/settings,500,PostmanRuntime/7.29.0,-,success
+218.92.0.225,dbadmin,root' OR '1'='1,2025-04-21T06:52:50+1200,POST,/auth,404,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://evil.com/redirect,failed
+193.32.126.210,johnsmith,<script>alert(1)</script>,2025-04-21T06:52:50+1200,POST,/auth,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://hacked.com/exploit,failed
+218.92.0.103,manager,qwerty,2025-04-20T20:52:50+0200,DELETE,/profile,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://hacked.com/exploit,failed
+111.90.147.183,guest1,<script>alert('xss')</script>,2025-04-21T03:52:50+0900,HEAD,/settings,201,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4380.0 Safari/537.36",https://youtube.com,success
+111.90.147.183,james,admin' #,2025-04-21T03:52:50+0900,PATCH,/logout,301,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://someother.com,success
+218.92.0.231,smith,'; DROP TABLE users; --,2025-04-20T18:52:50+0000,POST,/usr/login,200,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://google.com,success
+37.123.163.58,test,password1,2025-04-20T11:52:50-0700,POST,/usr/login,403,curl/7.68.0,https://secured.com,failed
+109.248.148.55,service_account,'; DROP TABLE users; --,2025-04-20T21:52:50+0300,PUT,/register,401,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://hacked.com/exploit,failed
+103.86.49.149,eve,' OR '1'='1,2025-04-20T20:52:50+0200,OPTIONS,/auth,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.12.4.5121",https://evil.com/redirect,failed
+203.0.113.5,admin,12345,2025-04-20T18:52:50+0000,OPTIONS,/logout,200,python-requests/2.25.1,https://facebook.com,success
+203.0.113.5,admin,iloveyou,2025-04-20T20:52:50+0200,PUT,/api/user,401,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://attack.com/malicious,success
+218.92.0.233,root,admin' --,2025-04-20T18:52:50+0000,GET,/logout,500,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://attack.com/malicious,failed
+134.209.120.69,isabella,' OR '1'='1,2025-04-21T04:52:50+1000,POST,/profile,400,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://secured.com,failed
+218.92.0.216,hacker,'; DROP TABLE users; --,2025-04-20T11:52:50-0700,PATCH,/admin,400,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://youtube.com,success
+103.86.49.149,janedoe,' OR 1=1#,2025-04-20T19:52:50+0100,GET,/auth,403,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,success
+218.92.0.217,hacker,letmein,2025-04-21T00:22:50+0530,PATCH,/auth,200,PostmanRuntime/7.29.0,https://google.com,failed
+209.141.38.71,charlie,pass@123,2025-04-20T19:52:50+0100,PATCH,/admin,502,PostmanRuntime/7.29.0,https://evil.com/redirect,failed
+203.0.113.5,manager,password1,2025-04-21T06:52:50+1200,GET,/usr/login,201,Mozilla/5.0 (Windows NT 10.0; Win64; x64),https://someother.com,failed
+185.129.62.62,bob,welcome,2025-04-20T14:52:50-0400,DELETE,/api/data,401,curl/7.68.0,https://google.com,failed
+109.248.148.55,hilary,qwerty,2025-04-21T04:52:50+1000,PUT,/auth,502,python-requests/2.25.1,https://attack.com/malicious,success
+218.92.0.236,root,<script>alert(1)</script>,2025-04-20T20:52:50+0200,HEAD,/login,502,"Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",https://attack.com/malicious,success
+185.220.100.252,bob,password1,2025-04-21T06:52:50+1200,PUT,/profile,200,PostmanRuntime/7.29.0,https://hacked.com/exploit,failed
+193.218.118.110,dev,letmein123,2025-04-20T18:52:50+0000,PATCH,/usr/login,500,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://hacked.com/exploit,success
+45.148.10.67,adam,x' OR 1=1 --,2025-04-20T11:52:50-0700,POST,/admin,502,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 OPR/73.0.3856.329",https://evil.com/redirect,failed
+45.134.20.55,charlie,passw0rd,2025-04-20T22:52:50+0400,DELETE,/api/data,301,python-requests/2.25.1,https://evil.com/phishing,failed
+218.92.0.221,manager,letmein123,2025-04-20T19:52:50+0100,DELETE,/auth,404,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://facebook.com,success
+103.86.49.149,hilary,admin' --,2025-04-21T03:52:50+0900,PUT,/register,403,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",https://evil.com/redirect,success
+185.142.236.35,root,'; DROP TABLE users; --,2025-04-20T19:52:50+0100,DELETE,/login,403,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),https://youtube.com,success

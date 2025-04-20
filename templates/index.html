@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOC Alert Prioritization System</title>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.default.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ts-dropdown {
+            z-index: 9999 !important;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+<div class="max-w-7xl mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-6 text-center text-yellow-300">SOC Alert Prioritization System</h1>
+    <form id="upload-form" enctype="multipart/form-data" class="mb-6">
+        <input type="file" id="file" name="file" accept=".json, .csv" required class="mb-4 block w-full text-white bg-gray-800 border border-gray-700 p-2 rounded">
+        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded">Upload & Analyze</button>
+    </form>
+    <div id="analyze-section" class="mt-6 text-center hidden">
+        <button id="analyze-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded shadow">🔬 Run Security Analysis</button>
+    </div>
+    <div id="filter-section" class="mb-6 hidden">
+        <h2 class="text-lg mb-2 text-yellow-400">Filter Logs:</h2>
+        <div id="filters" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"></div>
+    </div>
+    <div class="scroll-table overflow-auto max-h-[500px] border border-gray-700">
+        <table id="log-table" class="min-w-full table-auto border-collapse border border-gray-600 text-sm">
+            <thead id="table-head" class="bg-gray-700 sticky top-0 z-10"></thead>
+            <tbody id="table-body" class="bg-gray-800"></tbody>
+        </table>
+    </div>
+</div>
+<div class="flex justify-end items-center mb-4 gap-2">
+    <div id="column-toggles" class="flex flex-wrap gap-2" style="margin-right: 30%;"></div>
+</div>
+
+
+
+<script>
+    let rawData = [];
+    let allKeys = [];
+
+    document.getElementById('upload-form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+
+        try {
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData
+            });
+
+            const contentType = response.headers.get("content-type");
+            if (!contentType.includes("application/json")) {
+                throw new Error("Unexpected response type");
+            }
+
+            const result = await response.json();
+            console.log("Uploaded data:", result);
+
+            rawData = result.data;
+            console.log("Data being sent for analysis:", rawData);
+            allKeys = Object.keys(rawData[0] || {});
+
+            document.getElementById('filter-section').classList.remove('hidden');
+            document.getElementById('analyze-section').classList.remove('hidden');
+            generateFilters();
+            renderTable(rawData);
+        } catch (error) {
+            console.error("Error parsing JSON:", error);
+        }
+    });
+
+    function generateFilters() {
+        const filterContainer = document.getElementById('filters');
+        filterContainer.innerHTML = '';
+
+        allKeys.forEach(key => {
+            const select = document.createElement('select');
+            select.id = `filter-${key}`;
+            select.dataset.key = key;
+
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = `All ${key}`;
+            select.appendChild(defaultOption);
+
+            const uniqueValues = [...new Set(rawData.map(row => row[key]))].sort();
+            uniqueValues.forEach(value => {
+                const option = document.createElement('option');
+                option.value = value;
+                option.textContent = value;
+                select.appendChild(option);
+            });
+
+            filterContainer.appendChild(select);
+
+            new TomSelect(select, {
+                create: false,
+                allowEmptyOption: true,
+                sortField: { field: "text", direction: "asc" },
+                onChange: applyFilters
+            });
+        });
+    }
+
+    function applyFilters() {
+        let filtered = [...rawData];
+
+        allKeys.forEach(key => {
+            const selected = document.getElementById(`filter-${key}`);
+            const value = selected && selected.tomselect ? selected.tomselect.getValue() : '';
+            if (value) {
+                filtered = filtered.filter(row => String(row[key]) === value);
+            }
+        });
+
+        renderTable(filtered);
+    }
+
+    function renderTable(data) {
+        const head = document.getElementById('table-head');
+        const body = document.getElementById('table-body');
+        head.innerHTML = '';
+        body.innerHTML = '';
+
+        if (data.length === 0) return;
+
+        const tr = document.createElement('tr');
+        allKeys.forEach(key => {
+            const th = document.createElement('th');
+            th.className = 'border border-gray-600 px-2 py-1 text-left';
+            th.textContent = key;
+            tr.appendChild(th);
+        });
+        head.appendChild(tr);
+
+        data.forEach(row => {
+            const tr = document.createElement('tr');
+            allKeys.forEach(key => {
+                const td = document.createElement('td');
+                td.className = 'border border-gray-700 px-2 py-1 whitespace-nowrap';
+                td.textContent = row[key];
+                tr.appendChild(td);
+            });
+            body.appendChild(tr);
+        });
+        generateColumnToggles();
+
+    }
+
+    document.getElementById('analyze-btn').addEventListener('click', async () => {
+        try {
+            const response = await fetch('/analyze', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(rawData)
+            });
+            const result = await response.json();
+        
+            // 👍 Use the right key here:
+            const analyzed = result.analyzed_logs || [];
+        
+            // Store in localStorage
+            localStorage.setItem('analyzed_logs', JSON.stringify(analyzed));
+        
+            // Update table to show analysis results
+            //rawData = analyzed;
+            //allKeys = Object.keys(rawData[0] || {});
+            //generateFilters();
+            //renderTable(rawData);
+            window.location.href = "/result";
+        
+        } catch (err) {
+            console.error("Error analyzing logs:", err);
+            const response = err.response ? await err.response.text() : 'No response';
+            alert(`❌ Error during analysis: ${response}`);
+        }
+
+    });
+
+    window.addEventListener('load', () => {
+      const cached = JSON.parse(localStorage.getItem('analyzed_logs') || '[]');
+      if (cached.length) {
+        rawData = cached;
+        allKeys = Object.keys(rawData[0] || {});
+        document.getElementById('filter-section').classList.remove('hidden');
+        document.getElementById('analyze-section').classList.remove('hidden');
+        generateFilters();
+        renderTable(rawData);
+      }
+    });
+
+    function generateColumnToggles() {
+        const toggleContainer = document.getElementById('column-toggles');
+        toggleContainer.innerHTML = '';
+
+        allKeys.forEach(key => {
+            const label = document.createElement('label');
+            label.className = 'inline-flex items-center text-yellow-300 text-sm';
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = true;
+            checkbox.dataset.key = key;
+            checkbox.className = 'mr-1 accent-yellow-500';
+            checkbox.addEventListener('change', () => toggleColumn(key, checkbox.checked));
+
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(key));
+            toggleContainer.appendChild(label);
+        });
+    }
+
+
+    function toggleColumn(key, show) {
+        const colIndex = Array.from(document.querySelectorAll('#table-head th')).findIndex(th => th.textContent === key);
+        if (colIndex === -1) return;
+
+        const selector = `#log-table tr > :nth-child(${colIndex + 1})`;
+        document.querySelectorAll(selector).forEach(cell => {
+            cell.style.display = show ? '' : 'none';
+        });
+    }
+
+</script>
+
+
+</body>
+</html>
